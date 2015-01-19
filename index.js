@@ -2,8 +2,8 @@
 var yaml = require('js-yaml')
   , qs = require('querystring')
   , plist = require('plist')
-  , fs = require('fs-extra')
-  , path  = require('path')
+  , fs = require('fs')
+  , path = require('path')
 
 module.exports = {
     // classes
@@ -74,9 +74,8 @@ function generate(docset, inDir, outDir)
 function generateDatabase(docsetRoot, docset)
 {
     var dbPath = path.join(docsetRoot, 'Contents', 'Resources', 'docSet.dsidx')
-    console.log('db path = ', dbPath)
     var sqlite3 = require('sqlite3').verbose()
-    var db = new sqlite3.Database(dbPath) //':memory:')
+    var db = new sqlite3.Database(dbPath)
 
     db.serialize(function () {
         setupTables(db)
