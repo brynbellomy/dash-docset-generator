@@ -1,19 +1,14 @@
 {
 	"name": "dash-docset-generator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
 	"main": "index.js",
 	"dependencies": {
 		"chalk": "0.5.x",
-		"fs-extra": "~0.14.0",
-		"gulp": "~3.8.10",
-		"gulp-exec": "~2.1.1",
 		"js-yaml": "3.2.x",
 		"plist": "1.1.x",
 		"shelljs": "0.3.x",
-		"sqlite3": "3.0.x",
-		"when": "~3.6.4",
-		"yaml": "~0.2.3"
+		"sqlite3": "3.0.x"
 	},
 	"devDependencies": {},
 	"scripts": {
