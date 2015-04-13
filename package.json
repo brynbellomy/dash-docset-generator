@@ -1,16 +1,19 @@
 {
 	"name": "dash-docset-generator",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
 	"main": "index.js",
 	"dependencies": {
-		"chalk": "0.5.x",
 		"js-yaml": "3.2.x",
 		"plist": "1.1.x",
 		"shelljs": "0.3.x",
-		"sqlite3": "3.0.x"
+		"sqlite3": "3.0.x",
+		"yargs": "3.7.x"
 	},
 	"devDependencies": {},
+	"bin": {
+		"build-dash-docsets": "bin/build-dash-docsets"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

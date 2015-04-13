@@ -1,0 +1,86 @@
+#!/usr/bin/env node
+
+var shell = require('shelljs/global')
+  , chalk = require('chalk')
+  , path  = require('path')
+  , docs  = require('../')
+  , fs    = require('fs')
+
+var argv = require('yargs')
+                .describe('i', 'The directory containing the source files to be converted into docsets.').alias('i', 'inputDir').demand('i')
+                .describe('o', 'The directory in which to place the generated docsets.').alias('o', 'outputDir').default('o', 'build')
+                .usage('Usage: $0 -i <input dir> [-o <output dir>]')
+                .argv
+
+var SRC_DIR   = argv.inputDir
+var BUILD_DIR = argv.outputDir
+
+console.log('SRC_DIR', SRC_DIR)
+console.log('BUILD_DIR', BUILD_DIR)
+
+// ensure the build directory exists
+mkdir('-p', BUILD_DIR)
+
+// process markdown files into docsets using a direct call to `md2dash`
+ls( path.join(SRC_DIR, '*.md') ).forEach(function (file) {
+    if (needsBuild(file, builtProductFor(file))) {
+        print('Building ' + chalk.blue(file) + '... ')
+
+        rm('-rf', builtProductFor(file))
+        cd(BUILD_DIR)
+        var relativeFilepath = path.resolve('.', path.join('..', file))
+        var result = exec('md2dash ' + relativeFilepath)
+        print(formatResult(result) + '\n')
+        cd('..')
+    }
+    else {
+        print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
+    }
+})
+
+// process YAML files into docsets using the `dash-docset-generator` module
+ls( path.join(SRC_DIR, '*.yaml') ).forEach(function (file) {
+    if (needsBuild(file, builtProductFor(file))) {
+        print('Building ' + chalk.blue(file) + '... ')
+
+        rm('-rf', builtProductFor(file))
+        var result = docs.generateFromYAML(file, SRC_DIR, BUILD_DIR)
+        print(formatResult(result) + '\n')
+    }
+    else {
+        print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
+    }
+})
+
+function needsBuild(file, builtProduct) {
+    return mtime(file) > mtime(builtProduct)
+}
+
+function builtProductFor(file) {
+    return path.join(BUILD_DIR, path.basename(file))
+}
+
+function mtime(file) {
+    if (fs.existsSync(file)) {
+        var stat = fs.statSync(file)
+        return stat.mtime.getTime()
+    }
+    return 0
+}
+
+function print(msg) {
+    process.stderr.write(msg)
+}
+
+function formatResult(result) {
+    if (result.code === 0) {
+        return chalk.green('success')
+    }
+    else {
+        require('eyes').inspect(result)
+        return chalk.red('failed (result = ' + result + ')')
+    }
+}
+
+
+
