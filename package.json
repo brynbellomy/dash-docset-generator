@@ -1,6 +1,6 @@
 {
 	"name": "dash-docset-generator",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
 	"main": "index.js",
 	"dependencies": {
