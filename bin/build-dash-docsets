@@ -15,16 +15,14 @@ var argv = require('yargs')
 var SRC_DIR   = argv.inputDir
 var BUILD_DIR = argv.outputDir
 
-console.log('SRC_DIR', SRC_DIR)
-console.log('BUILD_DIR', BUILD_DIR)
-
 // ensure the build directory exists
 mkdir('-p', BUILD_DIR)
 
 // process markdown files into docsets using a direct call to `md2dash`
 ls( path.join(SRC_DIR, '*.md') ).forEach(function (file) {
-    if (needsBuild(file, builtProductFor(file))) {
-        print('Building ' + chalk.blue(file) + '... ')
+    var builtProduct = builtProductFor(file)
+    if (needsBuild(file, builtProduct)) {
+        print('Building ' + chalk.blue(file) + ' -> ' + chalk.yellow(builtProduct) + '... ')
 
         rm('-rf', builtProductFor(file))
         cd(BUILD_DIR)
