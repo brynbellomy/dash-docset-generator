@@ -1,37 +1,47 @@
 {
-	"name": "dash-docset-generator",
-	"version": "0.1.1",
-	"description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
-	"main": "index.js",
-	"dependencies": {
-		"js-yaml": "3.2.x",
-		"plist": "1.1.x",
-		"shelljs": "0.3.x",
-		"sqlite3": "3.0.x",
-		"yargs": "3.7.x"
-	},
-	"devDependencies": {},
-	"bin": {
-		"build-dash-docsets": "bin/build-dash-docsets"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/brynbellomy/dash-docset-generator"
-	},
-	"keywords": [
-		"dash",
-		"doc",
-		"documentation",
-		"docset",
-		"docs"
-	],
-	"author": "bryn austin bellomy <bryn.bellomy@gmail.com>",
-	"license": "WTFPL",
-	"bugs": {
-		"url": "https://github.com/brynbellomy/dash-docset-generator/issues"
-	},
-	"homepage": "https://github.com/brynbellomy/dash-docset-generator"
+  "name": "dash-docset-generator",
+  "version": "0.1.1",
+  "description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
+  "author": "bryn austin bellomy <bryn.bellomy@gmail.com>",
+  "license": "WTFPL",
+  "main": "index.js",
+  "bin": {
+    "build-dash-docsets": "bin/build-dash-docsets"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brynbellomy/dash-docset-generator"
+  },
+  "keywords": [
+    "dash",
+    "doc",
+    "documentation",
+    "docset",
+    "docs"
+  ],
+  "bugs": {
+    "url": "https://github.com/brynbellomy/dash-docset-generator/issues"
+  },
+  "homepage": "https://github.com/brynbellomy/dash-docset-generator",
+  "dependencies": {
+    "chalk": "1.0.x",
+    "cheerio": "0.19.x",
+    "cli-components": "0.2.x",
+    "cli-components-io": "^0.1.1",
+    "fs-objects": "^0.2.0",
+    "ncp": "^2.0.0",
+    "plist": "1.1.x",
+    "shelljs": "^0.3.0",
+    "sqlite3": "3.0.x",
+    "when": "3.7.x",
+    "yaml-front-matter": "3.2.x",
+    "yargs": "3.7.x"
+  },
+  "devDependencies": {
+    "eyes": "^0.1.8",
+    "typescript": "^1.5.0-beta"
+  }
 }

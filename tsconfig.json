@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "declaration": false,
+        "sourceMap": false,
+        "outDir": "build"
+    },
+    "files": [
+        "typings/tsd.d.ts"
+      , "src/index.ts"
+      , "src/DocsetBuilder.ts"
+      , "src/DatabaseBuilder.ts"
+      , "src/DocsetConfig.ts"
+    ]
+}

@@ -1,54 +1,82 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony --harmony_arrow_functions --harmony_templates
 
-var shell = require('shelljs/global')
+'use strict';
+
+const shell = require('shelljs/global')
   , chalk = require('chalk')
   , path  = require('path')
-  , docs  = require('../')
+  , docs  = require('../build/index')
   , fs    = require('fs')
+  , when = require('when')
 
-var argv = require('yargs')
-                .describe('i', 'The directory containing the source files to be converted into docsets.').alias('i', 'inputDir').demand('i')
-                .describe('o', 'The directory in which to place the generated docsets.').alias('o', 'outputDir').default('o', 'build')
+const argv = require('yargs')
+                .describe('i', 'The directory containing the source files to be converted into a docset.').alias('i', 'inputDir').demand('i').string('c')
+                .describe('o', 'The directory in which to place the generated docset.').alias('o', 'outputDir').default('o', 'build').string('o')
+                .describe('c', 'The config file, if an "index.md" with YAML front matter does not exist.').alias('c', 'config').string('c')
                 .usage('Usage: $0 -i <input dir> [-o <output dir>]')
                 .argv
 
-var SRC_DIR   = argv.inputDir
-var BUILD_DIR = argv.outputDir
+const SRC_DIR   = argv.inputDir
+const BUILD_DIR = argv.outputDir
 
 // ensure the build directory exists
 mkdir('-p', BUILD_DIR)
 
+const configPath = !!argv['config'] ? argv['config']
+                                    : path.join(argv.inputDir, 'index.md')
+
+// const indexFile = path.join(argv.inputDir, 'index.md')
+
+function loadDocsetConfig() {
+    const type = path.extname(configPath).toLowerCase()
+    switch (type) {
+        case '.md':     return docs.DocsetConfig.fromMarkdown(configPath, argv.outputDir)
+        case '.yaml':   return docs.DocsetConfig.fromYAML(configPath, argv.inputDir, argv.outputDir)
+        case '.json':   return docs.DocsetConfig.fromJSON(configPath, argv.inputDir, argv.outputDir)
+        default:        return when.reject('Config files must end in .yaml, .json, or .md')
+    }
+}
+
+loadDocsetConfig().done(
+    config => new docs.DocsetBuilder(config).build(),
+    err => {
+        console.error(`Error: ${err}`)
+        console.log(err.stack)
+    }
+)
+
 // process markdown files into docsets using a direct call to `md2dash`
-ls( path.join(SRC_DIR, '*.md') ).forEach(function (file) {
-    var builtProduct = builtProductFor(file)
-    if (needsBuild(file, builtProduct)) {
-        print('Building ' + chalk.blue(file) + ' -> ' + chalk.yellow(builtProduct) + '... ')
+// let markdownPaths = path.join(SRC_DIR, '*.md')
+// ls(markdownPaths).forEach((file) => {
+//     var builtProduct = builtProductFor(file)
+//     if (needsBuild(file, builtProduct)) {
+//         print('Building ' + chalk.blue(file) + ' -> ' + chalk.yellow(builtProduct) + '... ')
 
-        rm('-rf', builtProductFor(file))
-        cd(BUILD_DIR)
-        var relativeFilepath = path.resolve('.', path.join('..', file))
-        var result = exec('md2dash ' + relativeFilepath)
-        print(formatResult(result) + '\n')
-        cd('..')
-    }
-    else {
-        print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
-    }
-})
+//         rm('-rf', builtProductFor(file))
+//         cd(BUILD_DIR)
+//         var relativeFilepath = path.resolve('.', path.join('..', file))
+//         var result = exec('md2dash ' + relativeFilepath)
+//         print(formatResult(result) + '\n')
+//         cd('..')
+//     }
+//     else {
+//         print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
+//     }
+// })
 
-// process YAML files into docsets using the `dash-docset-generator` module
-ls( path.join(SRC_DIR, '*.yaml') ).forEach(function (file) {
-    if (needsBuild(file, builtProductFor(file))) {
-        print('Building ' + chalk.blue(file) + '... ')
+// // process YAML files into docsets using the `dash-docset-generator` module
+// ls( path.join(SRC_DIR, '*.yaml') ).forEach(function (file) {
+//     if (needsBuild(file, builtProductFor(file))) {
+//         print('Building ' + chalk.blue(file) + '... ')
 
-        rm('-rf', builtProductFor(file))
-        var result = docs.generateFromYAML(file, SRC_DIR, BUILD_DIR)
-        print(formatResult(result) + '\n')
-    }
-    else {
-        print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
-    }
-})
+//         rm('-rf', builtProductFor(file))
+//         var result = docs.generateFromYAML(file, SRC_DIR, BUILD_DIR)
+//         print(formatResult(result) + '\n')
+//     }
+//     else {
+//         print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
+//     }
+// })
 
 function needsBuild(file, builtProduct) {
     return mtime(file) > mtime(builtProduct)

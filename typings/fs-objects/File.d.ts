@@ -1,0 +1,1 @@
+../../node_modules/fs-objects/build/File.d.ts
