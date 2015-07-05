@@ -2,13 +2,10 @@
 import * as assert from 'assert'
 import * as fs from 'fs'
 import * as path from 'path'
-import * as qs from 'querystring'
-
 import * as when from 'when'
 import * as whenNode from 'when/node'
 import * as ncp from 'ncp'
 import * as sh from 'shelljs'
-import * as io from 'cli-components-io'
 import cheerio = require('cheerio')
 const mdToc = require('markdown-it-toc')
 
@@ -46,8 +43,7 @@ export class DocsetBuilder
         this.databaseBuilder = new DatabaseBuilder(this.dbFilename)
     }
 
-    build (): when.Promise<void>
-    {
+    build (): when.Promise<void> {
         // nuke + regenerate directory structure
         sh.rm('-rf', this.docsetRoot.pathString)
         sh.mkdir('-p', this.docsetDocumentsDir.pathString)
@@ -65,13 +61,14 @@ export class DocsetBuilder
             promises.push(this.handleFile(new Path(file)))
         }
 
-        return when.join(promises).then(() => { return })
+        return when.join(promises).then(() => {
+            console.log('Done.')
+            return
+        })
     }
 
 
-    handleFile (file:Path): when.Promise<File>
-    {
-        io.println(`handleFile ~> file( ${file.pathString} )`)
+    handleFile (file:Path): when.Promise<File> {
         var buildFilePromise: when.Promise<File>
 
         switch (file.extname.toLowerCase()) {
@@ -98,8 +95,7 @@ export class DocsetBuilder
     }
 
 
-    addHeaderAnchorsToHTMLFile (file:File): when.Promise<File>
-    {
+    addHeaderAnchorsToHTMLFile (file:File): when.Promise<File> {
         return when.promise<File>((resolve, reject) => {
             if (file.extname === '.html')
             {
@@ -137,7 +133,7 @@ export class DocsetBuilder
     generateMarkdown (mdFile:File): when.Promise<File>
     {
         return when.promise<File>((resolve, reject) => {
-            io.println('Generating markdown...')
+            console.log('Generating markdown...')
 
             const outFile = this.builtFilenameForSourceFile(mdFile.path.pathString)
 
@@ -180,7 +176,7 @@ export class DocsetBuilder
     generatePlist(): when.Promise<void>
     {
         return when.promise<void>((resolve, reject) => {
-            io.println('Generating plist...')
+            console.log('Generating plist...')
 
             const plistData = {
               'CFBundleIdentifier':      'cheatsheet',
@@ -220,7 +216,7 @@ export class DocsetBuilder
     generateDatabase(): when.Promise<void>
     {
         // return when.promise<void>((resolve, reject) => {
-            io.println('Generating database...')
+            console.log('Generating database...')
 
             // add the docset's index file as the first header/category/whatever
 

@@ -4,7 +4,6 @@ var when = require('when');
 var whenNode = require('when/node');
 var ncp = require('ncp');
 var sh = require('shelljs');
-var io = require('cli-components-io');
 var cheerio = require('cheerio');
 var mdToc = require('markdown-it-toc');
 var plist = require('plist');
@@ -60,11 +59,13 @@ var DocsetBuilder = (function () {
             var file = _a[_i];
             promises.push(this.handleFile(new fs_objects_1.Path(file)));
         }
-        return when.join(promises).then(function () { return; });
+        return when.join(promises).then(function () {
+            console.log('Done.');
+            return;
+        });
     };
     DocsetBuilder.prototype.handleFile = function (file) {
         var _this = this;
-        io.println("handleFile ~> file( " + file.pathString + " )");
         var buildFilePromise;
         switch (file.extname.toLowerCase()) {
             case '.md':
@@ -120,7 +121,7 @@ var DocsetBuilder = (function () {
     DocsetBuilder.prototype.generateMarkdown = function (mdFile) {
         var _this = this;
         return when.promise(function (resolve, reject) {
-            io.println('Generating markdown...');
+            console.log('Generating markdown...');
             var outFile = _this.builtFilenameForSourceFile(mdFile.path.pathString);
             return _this.renderMarkdown(mdFile)
                 .then(function (mdHtml) { return _this.renderMarkdownLayout(mdHtml); })
@@ -144,7 +145,7 @@ var DocsetBuilder = (function () {
     DocsetBuilder.prototype.generatePlist = function () {
         var _this = this;
         return when.promise(function (resolve, reject) {
-            io.println('Generating plist...');
+            console.log('Generating plist...');
             var plistData = {
                 'CFBundleIdentifier': 'cheatsheet',
                 'CFBundleName': (_this.config.title) ? _this.config.title : 'No Title',
@@ -175,7 +176,7 @@ var DocsetBuilder = (function () {
     };
     DocsetBuilder.prototype.generateDatabase = function () {
         // return when.promise<void>((resolve, reject) => {
-        io.println('Generating database...');
+        console.log('Generating database...');
         // add the docset's index file as the first header/category/whatever
         var builtIndexFilename = new fs_objects_1.Path(this.builtFilenameForSourceFile(this.config.index_file)).basename;
         this.databaseBuilder.addItem(this.config.title, 'Category', builtIndexFilename);

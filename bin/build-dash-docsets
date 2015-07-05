@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony --harmony_arrow_functions --harmony_templates
+#!/usr/bin/env node
 
 'use strict';
 
@@ -38,45 +38,13 @@ function loadDocsetConfig() {
 }
 
 loadDocsetConfig().done(
-    config => new docs.DocsetBuilder(config).build(),
-    err => {
+    function (config) { new docs.DocsetBuilder(config).build() },
+    function (err)  {
         console.error(`Error: ${err}`)
         console.log(err.stack)
     }
 )
 
-// process markdown files into docsets using a direct call to `md2dash`
-// let markdownPaths = path.join(SRC_DIR, '*.md')
-// ls(markdownPaths).forEach((file) => {
-//     var builtProduct = builtProductFor(file)
-//     if (needsBuild(file, builtProduct)) {
-//         print('Building ' + chalk.blue(file) + ' -> ' + chalk.yellow(builtProduct) + '... ')
-
-//         rm('-rf', builtProductFor(file))
-//         cd(BUILD_DIR)
-//         var relativeFilepath = path.resolve('.', path.join('..', file))
-//         var result = exec('md2dash ' + relativeFilepath)
-//         print(formatResult(result) + '\n')
-//         cd('..')
-//     }
-//     else {
-//         print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
-//     }
-// })
-
-// // process YAML files into docsets using the `dash-docset-generator` module
-// ls( path.join(SRC_DIR, '*.yaml') ).forEach(function (file) {
-//     if (needsBuild(file, builtProductFor(file))) {
-//         print('Building ' + chalk.blue(file) + '... ')
-
-//         rm('-rf', builtProductFor(file))
-//         var result = docs.generateFromYAML(file, SRC_DIR, BUILD_DIR)
-//         print(formatResult(result) + '\n')
-//     }
-//     else {
-//         print('Skipping ' + chalk.green(file) + ', already up-to-date.\n')
-//     }
-// })
 
 function needsBuild(file, builtProduct) {
     return mtime(file) > mtime(builtProduct)

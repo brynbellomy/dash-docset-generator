@@ -1,0 +1,6 @@
+title: Python builtins
+bundle_name: PythonBuiltins
+keyword: pybuiltins
+files: ["built-in-functions.html", "style.css"]
+index_file: built-in-functions.html
+stylesheet: style.css

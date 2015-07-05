@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>CFBundleIdentifier</key>
+    <string>cheatsheet</string>
+    <key>CFBundleName</key>
+    <string>Shell Fu</string>
+    <key>DocSetPlatformFamily</key>
+    <string>cheatsheet</string>
+    <key>DashDocSetFamily</key>
+    <string>dashtoc</string>
+    <key>isDashDocset</key>
+    <true/>
+    <key>dashIndexFilePath</key>
+    <string>build/ShellFu.docset/Contents/Resources/Documents/index.html</string>
+    <key>DashDocSetPluginKeyword</key>
+    <string>shellfu</string>
+    <key>DashDocSetKeyword</key>
+    <string>shellfu</string>
+  </dict>
+</plist>

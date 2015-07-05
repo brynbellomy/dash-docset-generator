@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>CFBundleIdentifier</key>
+    <string>cheatsheet</string>
+    <key>CFBundleName</key>
+    <string>Python builtins</string>
+    <key>DocSetPlatformFamily</key>
+    <string>cheatsheet</string>
+    <key>DashDocSetFamily</key>
+    <string>dashtoc</string>
+    <key>isDashDocset</key>
+    <true/>
+    <key>dashIndexFilePath</key>
+    <string>build/PythonBuiltins.docset/Contents/Resources/Documents/built-in-functions.html</string>
+    <key>DashDocSetPluginKeyword</key>
+    <string>pybuiltins</string>
+    <key>DashDocSetKeyword</key>
+    <string>pybuiltins</string>
+  </dict>
+</plist>

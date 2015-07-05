@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html -->
+<html id="html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<link id="baseCSS" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/the_components/reformat/css/base__notable.css" rel="stylesheet" class="notable" type="text/css"><style type="text/css" id="optionsCSS">#body { font-family: Inconsolata; font-size: 16px; line-height: 1.5em; color: #e3e3e3; text-align: left; } #text { padding-top: 4.5em;padding-bottom: 9em;} #background { background-color: #2D2D2D; } .setTextColorAsBackgroundColor { background-color: #e3e3e3; } .setBackgroundColorAsTextColor { color: #2D2D2D; } .setBackgroundColor { background-color: #2D2D2D; } .setTextColor { color: #e3e3e3; } #box, .setBoxWidth { width: 36em; } a { color: #3DA1ED; } a:visited { color: #e3e3e3; } @media print { body.footnote_links__on_print a, body.footnote_links__on_print a:hover { color: #e3e3e3 !important; text-decoration: none !important; } } body.footnote_links__always a, body.footnote_links__always a:hover { color: #e3e3e3 !important; text-decoration: none !important; } img { border-color: #e3e3e3; } a img { border-color: #3DA1ED; } a:visited img { border-color: #e3e3e3; } h1 a, h2 a, a h1, a h2 { color: #e3e3e3; } h1, h2, h3, h4, h5, h6 { font-family: "Droid Sans Mono"; } pre { background-color: #2D2D2D; } pre, code { font-family: Inconsolata; } hr { border-color: #e3e3e3; } html.rtl #body #text { text-align: right !important; } h1, h2, h3, h4, h5, h6 { text-align: left; } html.rtl h1, html.rtl h2, html.rtl h3, html.rtl h4, html.rtl h5, html.rtl h6 { text-align: right !important; } #text div.separatorLine, #text section::before { background:      -o-linear-gradient(0, #2D2D2D 1%, #e3e3e3 50%, #2D2D2D 99%); background:    -moz-linear-gradient(0, #2D2D2D 1%, #e3e3e3 50%, #2D2D2D 99%); background: -webkit-linear-gradient(0, #2D2D2D 1%, #e3e3e3 50%, #2D2D2D 99%); }pre, code {  background: #555555; }code { padding: 3px; }pre { padding: 15px; } </style><link href="css" rel="stylesheet" type="text/css"><link href="css(1)" rel="stylesheet" type="text/css"><link id="clearly_highlighting_css" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/the_components/highlight/css/style.css" rel="stylesheet" type="text/css"><link id="clearly_highlighting_css_images" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/the_components/highlight/css/images.css" rel="stylesheet" type="text/css"></head>
+<body class="footnote_links__on_print large_graphics__do_nothing">
+    <div id="body"><div id="curtains"><div id="curtain__debug" class="curtain"><div class="setBoxWidth"><div class="setBoxWidthInner"><div class="curtainCanvas"><table id="debugOutput"></table></div></div></div><div class="curtainShading"></div><a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" class="curtainCloseButton"></a></div><div id="curtain__tips" class="curtain"><div class="setBoxWidth"><div class="setBoxWidthInner"><div class="curtainCanvas"><div id="curtain__tips__logo"></div><div id="curtain__tips__heading">blank_error__heading</div><div id="curtain__tips__body">blank_error__body</div></div></div></div><div class="curtainShading"></div><a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" class="curtainCloseButton"></a></div><div id="curtain__rtl" class="curtain"><div class="setBoxWidth"><div class="setBoxWidthInner"><div class="curtainCanvas">Text direction?<input id="curtain__rtl__radio__ltr" type="radio" name="curtain__rtl__radio_input" checked="checked"><label for="curtain__rtl__radio__ltr">Left-to-right</label><input id="curtain__rtl__radio__rtl" type="radio" name="curtain__rtl__radio_input"><label for="curtain__rtl__radio__rtl">Right-to-left</label></div></div></div><div class="curtainShading"></div><a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" class="curtainCloseButton"></a></div></div><div id="bodyContent"><div id="box" style="display: block;"><div id="box_inner"><div id="text"><div id="pages"><div class="page" id="page1"><div class="page_content"><div id="articleHeader"><h1 id="articleHeader__title">2. Built-in Functions¶</h1><div id="articleHeader__separator" class="separator"><div class="separatorLine setTextColorAsBackgroundColor"></div></div></div>
+<p>The Python interpreter has a number of functions built into it that are always
+available.  They are listed here in alphabetical order.</p>
+
+<dl>
+<dt id="abs">
+<tt>abs</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#abs" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the absolute value of a number.  The argument may be a plain or long
+integer or a floating point number.  If the argument is a complex number, its
+magnitude is returned.</p>
+</dd></dl>
+
+<dl>
+<dt id="all">
+<tt>all</tt><big>(</big><em>iterable</em><big>)</big><a href="built-in-functions.html" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return  if all elements of the <em>iterable</em> are true (or if the iterable
+is empty).  Equivalent to:</p>
+<div><div><pre> iterable
+     element  iterable
+          element
+            return False
+    return 
+</pre></div>
+</div>
+<div>
+<p>New in version 2.5.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="any">
+<tt>any</tt><big>(</big><em>iterable</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#any" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return  if any element of the <em>iterable</em> is true.  If the iterable
+is empty, return <tt>False</tt>.  Equivalent to:</p>
+<div><div><pre> iterable
+     element  iterable
+         element
+            return 
+    return False
+</pre></div>
+</div>
+<div>
+<p>New in version 2.5.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="basestring">
+<tt>basestring</tt><big>(</big><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#basestring" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>This abstract type is the superclass for  and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unicode" title="unicode" target="_blank"><tt>unicode</tt></a>. It
+cannot be called or instantiated, but it can be used to test whether an object
+is an instance of  or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unicode" title="unicode" target="_blank"><tt>unicode</tt></a>. <tt>isinstance(obj,
+basestring)</tt> is equivalent to <tt>isinstance(obj, (str, unicode))</tt>.</p>
+<div>
+<p>New in version 2.3.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="bin">
+<tt>bin</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#bin" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Convert an integer number to a binary string. The result is a valid Python
+expression.  If <em>x</em> is not a Python  object, it has to define an
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__index__" title="object.__index__" target="_blank"><tt>__index__()</tt></a> method that returns an integer.</p>
+<div>
+<p>New in version 2.6.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="bool">
+<em>class </em><tt>bool</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#bool" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a Boolean value, i.e. one of  or <tt>False</tt>.  <em>x</em> is converted
+using the standard truth testing procedure.  If <em>x</em> is false or omitted, this
+returns <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/constants.html#False" title="False" target="_blank"><tt>False</tt></a>; otherwise it returns .  is
+also a class, which is a subclass of . Class  cannot
+be subclassed further.  Its only instances are <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/constants.html#False" title="False" target="_blank"><tt>False</tt></a> and
+.</p>
+<div id="index-0">
+<p>New in version 2.2.1.</p>
+</div>
+<div>
+<p>Changed in version 2.3: If no argument is given, this function returns <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/constants.html#False" title="False" target="_blank"><tt>False</tt></a>.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="bytearray">
+<em>class </em><tt>bytearray</tt><big>(</big><em>source</em>, <em>encoding</em>, <em>errors</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#bytearray" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a new array of bytes.  The <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#bytearray" title="bytearray" target="_blank"><tt>bytearray</tt></a> class is a mutable
+sequence of integers in the range 0 &lt;= x &lt; 256.  It has most of the usual
+methods of mutable sequences, described in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq-mutable" target="_blank"><em>Mutable Sequence Types</em></a>, as well
+as most methods that the  type has, see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#string-methods" target="_blank"><em>String Methods</em></a>.</p>
+<p>The optional <em>source</em> parameter can be used to initialize the array in a few
+different ways:</p>
+<ul>
+<li>If it is <em>unicode</em>, you must also give the <em>encoding</em> (and optionally,
+<em>errors</em>) parameters; <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#bytearray" title="bytearray" target="_blank"><tt>bytearray()</tt></a> then converts the unicode to
+bytes using <tt>unicode.encode()</tt>.</li>
+<li>If it is an <em>integer</em>, the array will have that size and will be
+initialized with null bytes.</li>
+<li>If it is an object conforming to the <em>buffer</em> interface, a read-only buffer
+of the object will be used to initialize the bytes array.</li>
+<li>If it is an <em>iterable</em>, it must be an iterable of integers in the range
+<tt> &lt;=   </tt>, which are used as the initial contents of the array.</li>
+</ul>
+<p>Without an argument, an array of size 0 is created.</p>
+<div>
+<p>New in version 2.6.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="callable">
+<tt>callable</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#callable" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return  if the <em>object</em> argument appears callable,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/constants.html#False" title="False" target="_blank"><tt>False</tt></a> if not.  If this
+returns true, it is still possible that a call fails, but if it is false,
+calling <em>object</em> will never succeed.  Note that classes are callable (calling a
+class returns a new instance); class instances are callable if they have a
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__call__" title="object.__call__" target="_blank"><tt>__call__()</tt></a> method.</p>
+</dd></dl>
+
+<dl>
+<dt id="chr">
+<tt>chr</tt><big>(</big><em>i</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#chr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a string of one character whose ASCII code is the integer <em>i</em>.  For
+example, <tt>chr(97)</tt> returns the string . This is the inverse of
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#ord" title="ord" target="_blank"><tt>ord()</tt></a>.  The argument must be in the range [0..255], inclusive;
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.ValueError" title="exceptions.ValueError" target="_blank"><tt>ValueError</tt></a> will be raised if <em>i</em> is outside that range. See
+also <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unichr" title="unichr" target="_blank"><tt>unichr()</tt></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="classmethod">
+<tt>classmethod</tt><big>(</big><em>function</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#classmethod" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a class method for <em>function</em>.</p>
+<p>A class method receives the class as implicit first argument, just like an
+instance method receives the instance. To declare a class method, use this
+idiom:</p>
+<div><div><pre>class object
+    @classmethod
+        
+        
+</pre></div>
+</div>
+<p>The <tt>@classmethod</tt> form is a function <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-decorator" target="_blank"><em>decorator</em></a> – see the description
+of function definitions in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/compound_stmts.html#function" target="_blank"><em>Function definitions</em></a> for details.</p>
+<p>It can be called either on the class (such as <tt>C.f()</tt>) or on an instance (such
+as <tt>C().f()</tt>).  The instance is ignored except for its class. If a class
+method is called for a derived class, the derived class object is passed as the
+implied first argument.</p>
+<p>Class methods are different than C++ or Java static methods. If you want those,
+see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#staticmethod" title="staticmethod" target="_blank"><tt>staticmethod()</tt></a> in this section.</p>
+<p>For more information on class methods, consult the documentation on the standard
+type hierarchy in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#types" target="_blank"><em>The standard type hierarchy</em></a>.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+<div>
+<p>Changed in version 2.4: Function decorator syntax added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="cmp">
+<tt>cmp</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#cmp" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Compare the two objects <em>x</em> and <em>y</em> and return an integer according to the
+outcome.  The return value is negative if , zero if  and
+strictly positive if .</p>
+</dd></dl>
+
+<dl>
+<dt id="compile">
+<tt>compile</tt><big>(</big><em>source</em>, <em>filename</em>, <em>mode</em>, <em>flags</em>, <em>dont_inherit</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#compile" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Compile the <em>source</em> into a code or AST object.  Code objects can be executed
+by an  statement or evaluated by a call to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a>.
+<em>source</em> can either be a Unicode string, a <em>Latin-1</em> encoded string or an
+AST object.
+Refer to the  module documentation for information on how to work
+with AST objects.</p>
+<p>The <em>filename</em> argument should give the file from which the code was read;
+pass some recognizable value if it wasn’t read from a file (<tt>'&lt;string&gt;'</tt> is
+commonly used).</p>
+<p>The <em>mode</em> argument specifies what kind of code must be compiled; it can be
+<tt>'exec'</tt> if <em>source</em> consists of a sequence of statements, <tt>'eval'</tt> if it
+consists of a single expression, or <tt>'single'</tt> if it consists of a single
+interactive statement (in the latter case, expression statements that
+evaluate to something other than  will be printed).</p>
+<p>The optional arguments <em>flags</em> and <em>dont_inherit</em> control which future
+statements (see <a href="http://www.python.org/dev/peps/pep-0236" target="_blank"><strong>PEP 236</strong><sup class="readableLinkFootnote">[1]</sup></a>) affect the compilation of <em>source</em>.  If neither
+is present (or both are zero) the code is compiled with those future
+statements that are in effect in the code that is calling <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#compile" title="compile" target="_blank"><tt>compile()</tt></a>.  If the
+<em>flags</em> argument is given and <em>dont_inherit</em> is not (or is zero) then the
+future statements specified by the <em>flags</em> argument are used in addition to
+those that would be used anyway. If <em>dont_inherit</em> is a non-zero integer then
+the <em>flags</em> argument is it – the future statements in effect around the call
+to compile are ignored.</p>
+<p>Future statements are specified by bits which can be bitwise ORed together to
+specify multiple statements.  The bitfield required to specify a given feature
+can be found as the <tt>compiler_flag</tt> attribute on
+the <tt>_Feature</tt> instance in the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/__future__.html#module-__future__" title="__future__: Future statement definitions" target="_blank"><tt>__future__</tt></a> module.</p>
+<p>This function raises <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.SyntaxError" title="exceptions.SyntaxError" target="_blank"><tt>SyntaxError</tt></a> if the compiled source is invalid,
+and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> if the source contains null bytes.</p>
+<p>If you want to parse Python code into its AST representation, see
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/ast.html#ast.parse" title="ast.parse" target="_blank"><tt>ast.parse()</tt></a>.</p>
+<div>
+
+<p>When compiling a string with multi-line code in <tt>'single'</tt> or
+<tt>'eval'</tt> mode, input must be terminated by at least one newline
+character.  This is to facilitate detection of incomplete and complete
+statements in the  module.</p>
+</div>
+<div>
+<p>Changed in version 2.3: The <em>flags</em> and <em>dont_inherit</em> arguments were added.</p>
+</div>
+<div>
+<p>Changed in version 2.6: Support for compiling AST objects.</p>
+</div>
+<div>
+<p>Changed in version 2.7: Allowed use of Windows and Mac newlines.  Also input in <tt>'exec'</tt> mode
+does not have to end in a newline anymore.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="complex">
+<em>class </em><tt>complex</tt><big>(</big><em>real</em>, <em>imag</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#complex" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a complex number with the value <em>real</em> + <em>imag</em>*j or convert a string or
+number to a complex number.  If the first parameter is a string, it will be
+interpreted as a complex number and the function must be called without a second
+parameter.  The second parameter can never be a string. Each argument may be any
+numeric type (including complex). If <em>imag</em> is omitted, it defaults to zero and
+the function serves as a numeric conversion function like <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#int" title="int" target="_blank"><tt>int()</tt></a>,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#long" title="long" target="_blank"><tt>long()</tt></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#float" title="float" target="_blank"><tt>float()</tt></a>.  If both arguments are omitted, returns .</p>
+<div>
+
+<p>When converting from a string, the string must not contain whitespace
+around the central  or  operator.  For example,
+<tt>complex('1+2j')</tt> is fine, but <tt>complex('1  </tt> raises
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.ValueError" title="exceptions.ValueError" target="_blank"><tt>ValueError</tt></a>.</p>
+</div>
+<p>The complex type is described in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesnumeric" target="_blank"><em>Numeric Types — int, float, long, complex</em></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="delattr">
+<tt>delattr</tt><big>(</big><em>object</em>, <em>name</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#delattr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>This is a relative of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#setattr" title="setattr" target="_blank"><tt>setattr()</tt></a>.  The arguments are an object and a
+string.  The string must be the name of one of the object’s attributes.  The
+function deletes the named attribute, provided the object allows it.  For
+example, <tt>delattr(x, 'foobar')</tt> is equivalent to <tt> x.foobar</tt>.</p>
+</dd></dl>
+
+<dl>
+<dt>
+<em>class </em><tt>dict</tt><big>(</big><em>**kwarg</em><big>)</big></dt>
+<dt>
+<em>class </em><tt>dict</tt><big>(</big><em>mapping</em>, <em>**kwarg</em><big>)</big></dt>
+<dt>
+<em>class </em><tt>dict</tt><big>(</big><em>iterable</em>, <em>**kwarg</em><big>)</big></dt>
+<dd><p>Create a new dictionary.  The  object is the dictionary class.
+See  and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesmapping" target="_blank"><em>Mapping Types — dict</em></a> for documentation about this class.</p>
+<p>For other containers see the built-in , , and
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="tuple" target="_blank"><tt>tuple</tt></a> classes, as well as the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/collections.html#module-collections" title="collections: High-performance datatypes" target="_blank"><tt>collections</tt></a> module.</p>
+</dd></dl>
+
+<dl>
+<dt id="dir">
+<tt>dir</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#dir" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Without arguments, return the list of names in the current local scope.  With an
+argument, attempt to return a list of valid attributes for that object.</p>
+<p>If the object has a method named <tt>__dir__()</tt>, this method will be called and
+must return the list of attributes. This allows objects that implement a custom
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getattr__" title="object.__getattr__" target="_blank"><tt>__getattr__()</tt></a> or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getattribute__" title="object.__getattribute__" target="_blank"><tt>__getattribute__()</tt></a> function to customize the way
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#dir" title="dir" target="_blank"><tt>dir()</tt></a> reports their attributes.</p>
+<p>If the object does not provide <tt>__dir__()</tt>, the function tries its best to
+gather information from the object’s <tt>__dict__</tt> attribute, if defined, and
+from its type object.  The resulting list is not necessarily complete, and may
+be inaccurate when the object has a custom <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getattr__" title="object.__getattr__" target="_blank"><tt>__getattr__()</tt></a>.</p>
+<p>The default <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#dir" title="dir" target="_blank"><tt>dir()</tt></a> mechanism behaves differently with different types of
+objects, as it attempts to produce the most relevant, rather than complete,
+information:</p>
+<ul>
+<li>If the object is a module object, the list contains the names of the module’s
+attributes.</li>
+<li>If the object is a type or class object, the list contains the names of its
+attributes, and recursively of the attributes of its bases.</li>
+<li>Otherwise, the list contains the object’s attributes’ names, the names of its
+class’s attributes, and recursively of the attributes of its class’s base
+classes.</li>
+</ul>
+<p>The resulting list is sorted alphabetically.  For example:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt; import struct
+&gt;&gt;&gt;    # show the names in the module namespace
+['__builtins__', '__doc__', '__name__', 'struct']
+&gt;&gt;&gt; struct   # show the names in the struct module
+['Struct', '__builtins__', '__doc__', '__file__', '__name__',
+ '__package__', '_clearcache', 'calcsize', 'error', 'pack', 'pack_into',
+ 'unpack', 'unpack_from']
+&gt;&gt;&gt; class Shapeobject
+        def __dir__(self):
+            return ['area', 'perimeter', 'location']
+&gt;&gt;&gt;   Shape
+&gt;&gt;&gt; 
+['area', 'perimeter', 'location']
+</pre></div>
+</div>
+<div>
+
+<p>Because <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#dir" title="dir" target="_blank"><tt>dir()</tt></a> is supplied primarily as a convenience for use at an
+interactive prompt, it tries to supply an interesting set of names more than it
+tries to supply a rigorously or consistently defined set of names, and its
+detailed behavior may change across releases.  For example, metaclass attributes
+are not in the result list when the argument is a class.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="divmod">
+<tt>divmod</tt><big>(</big><em>a</em>, <em>b</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#divmod" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Take two (non complex) numbers as arguments and return a pair of numbers
+consisting of their quotient and remainder when using long division.  With mixed
+operand types, the rules for binary arithmetic operators apply.  For plain and
+long integers, the result is the same as . For floating point
+numbers the result is , where <em>q</em> is usually <tt>math.floor(a  </tt>
+but may be 1 less than that.  In any case  is very close to
+<em>a</em>, if  is non-zero it has the same sign as <em>b</em>, and <tt> &lt;= abs(a  
+ abs(b)</tt>.</p>
+<div>
+<p>Changed in version 2.3: Using <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#divmod" title="divmod" target="_blank"><tt>divmod()</tt></a> with complex numbers is deprecated.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="enumerate">
+<tt>enumerate</tt><big>(</big><em>sequence</em>, <em>start=0</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#enumerate" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return an enumerate object. <em>sequence</em> must be a sequence, an
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-iterator" target="_blank"><em>iterator</em></a>, or some other object which supports iteration.  The
+<tt>next()</tt> method of the iterator returned by <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#enumerate" title="enumerate" target="_blank"><tt>enumerate()</tt></a> returns a
+tuple containing a count (from <em>start</em> which defaults to 0) and the
+values obtained from iterating over <em>sequence</em>:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt; seasons  'Spring' 'Summer' 'Fall' 'Winter'
+&gt;&gt;&gt; enumerateseasons
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+&gt;&gt;&gt; enumerateseasons start
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+</pre></div>
+</div>
+<p>Equivalent to:</p>
+<div><div><pre> enumeratesequence start
+      start
+       sequence
+        yield  
+          
+</pre></div>
+</div>
+<div>
+<p>New in version 2.3.</p>
+</div>
+<div>
+<p>Changed in version 2.6: The <em>start</em> parameter was added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="eval">
+<tt>eval</tt><big>(</big><em>expression</em>, <em>globals</em>, <em>locals</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>The arguments are a Unicode or <em>Latin-1</em> encoded string and optional
+globals and locals.  If provided, <em>globals</em> must be a dictionary.
+If provided, <em>locals</em> can be any mapping object.</p>
+<div>
+<p>Changed in version 2.4: formerly <em>locals</em> was required to be a dictionary.</p>
+</div>
+<p>The <em>expression</em> argument is parsed and evaluated as a Python expression
+(technically speaking, a condition list) using the <em>globals</em> and <em>locals</em>
+dictionaries as global and local namespace.  If the <em>globals</em> dictionary is
+present and lacks ‘__builtins__’, the current globals are copied into <em>globals</em>
+before <em>expression</em> is parsed.  This means that <em>expression</em> normally has full
+access to the standard <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/__builtin__.html#module-__builtin__" title="__builtin__: The module that provides the built-in namespace." target="_blank"><tt>__builtin__</tt></a> module and restricted environments are
+propagated.  If the <em>locals</em> dictionary is omitted it defaults to the <em>globals</em>
+dictionary.  If both dictionaries are omitted, the expression is executed in the
+environment where <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a> is called.  The return value is the result of
+the evaluated expression. Syntax errors are reported as exceptions.  Example:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt;   
+&gt;&gt;&gt; print 'x+1'
+
+</pre></div>
+</div>
+<p>This function can also be used to execute arbitrary code objects (such as
+those created by <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#compile" title="compile" target="_blank"><tt>compile()</tt></a>).  In this case pass a code object instead
+of a string.  If the code object has been compiled with <tt>'exec'</tt> as the
+<em>mode</em> argument, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a>‘s return value will be .</p>
+<p>Hints: dynamic execution of statements is supported by the 
+statement.  Execution of statements from a file is supported by the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="execfile" target="_blank"><tt>execfile()</tt></a> function.  The <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#globals" title="globals" target="_blank"><tt>globals()</tt></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#locals" title="locals" target="_blank"><tt>locals()</tt></a> functions
+returns the current global and local dictionary, respectively, which may be
+useful to pass around for use by <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a> or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="execfile" target="_blank"><tt>execfile()</tt></a>.</p>
+<p>See <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/ast.html#ast.literal_eval" title="ast.literal_eval" target="_blank"><tt>ast.literal_eval()</tt></a> for a function that can safely evaluate strings
+with expressions containing only literals.</p>
+</dd></dl>
+
+<dl>
+<dt id="execfile">
+<tt>execfile</tt><big>(</big><em>filename</em>, <em>globals</em>, <em>locals</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>This function is similar to the  statement, but parses a file
+instead of a string.  It is different from the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement in
+that it does not use the module administration — it reads the file
+unconditionally and does not create a new module. <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#id3" id="id1" target="_blank">[1]</a></p>
+<p>The arguments are a file name and two optional dictionaries.  The file is parsed
+and evaluated as a sequence of Python statements (similarly to a module) using
+the <em>globals</em> and <em>locals</em> dictionaries as global and local namespace. If
+provided, <em>locals</em> can be any mapping object.  Remember that at module level,
+globals and locals are the same dictionary. If two separate objects are
+passed as <em>globals</em> and <em>locals</em>, the code will be executed as if it were
+embedded in a class definition.</p>
+<div>
+<p>Changed in version 2.4: formerly <em>locals</em> was required to be a dictionary.</p>
+</div>
+<p>If the <em>locals</em> dictionary is omitted it defaults to the <em>globals</em> dictionary.
+If both dictionaries are omitted, the expression is executed in the environment
+where <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="execfile" target="_blank"><tt>execfile()</tt></a> is called.  The return value is .</p>
+<div>
+
+<p>The default <em>locals</em> act as described for function <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#locals" title="locals" target="_blank"><tt>locals()</tt></a> below:
+modifications to the default <em>locals</em> dictionary should not be attempted.  Pass
+an explicit <em>locals</em> dictionary if you need to see effects of the code on
+<em>locals</em> after function <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="execfile" target="_blank"><tt>execfile()</tt></a> returns.  <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#execfile" title="execfile" target="_blank"><tt>execfile()</tt></a> cannot be
+used reliably to modify a function’s locals.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="file">
+<tt>file</tt><big>(</big><em>name</em>, <em>mode</em>, <em>buffering</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#file" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Constructor function for the  type, described further in section
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#bltin-file-objects" target="_blank"><em>File Objects</em></a>.  The constructor’s arguments are the same as those
+of the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#open" title="open" target="_blank"><tt>open()</tt></a> built-in function described below.</p>
+<p>When opening a file, it’s preferable to use <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#open" title="open" target="_blank"><tt>open()</tt></a> instead of  invoking
+this constructor directly.   is more suited to type testing (for
+example, writing <tt>isinstance(f, file)</tt>).</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="filter">
+<tt>filter</tt><big>(</big><em>function</em>, <em>iterable</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#filter" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Construct a list from those elements of <em>iterable</em> for which <em>function</em> returns
+true.  <em>iterable</em> may be either a sequence, a container which supports
+iteration, or an iterator.  If <em>iterable</em> is a string or a tuple, the result
+also has that type; otherwise it is always a list.  If <em>function</em> is ,
+the identity function is assumed, that is, all elements of <em>iterable</em> that are
+false are removed.</p>
+<p>Note that <tt>filter(function, iterable)</tt> is equivalent to <tt>[item   
+iterable  function(item)]</tt> if function is not  and <tt>[item  
+ iterable  item]</tt> if function is .</p>
+<p>See <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/itertools.html#itertools.ifilter" title="itertools.ifilter" target="_blank"><tt>itertools.ifilter()</tt></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/itertools.html#itertools.ifilterfalse" title="itertools.ifilterfalse" target="_blank"><tt>itertools.ifilterfalse()</tt></a> for iterator
+versions of this function, including a variation that filters for elements
+where the <em>function</em> returns false.</p>
+</dd></dl>
+
+<dl>
+<dt id="float">
+<em>class </em><tt>float</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#float" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a floating point number constructed from a number or string <em>x</em>.</p>
+<p>If the argument is a string, it
+must contain a possibly signed decimal or floating point number, possibly
+embedded in whitespace. The argument may also be [+|-]nan or [+|-]inf.
+Otherwise, the argument may be a plain or long integer
+or a floating point number, and a floating point number with the same value
+(within Python’s floating point precision) is returned.  If no argument is
+given, returns .</p>
+<div>
+
+<p id="index-2">When passing in a string, values for NaN and Infinity may be returned, depending
+on the underlying C library.  Float accepts the strings nan, inf and -inf for
+NaN and positive or negative infinity. The case and a leading + are ignored as
+well as a leading - is ignored for NaN. Float always represents NaN and infinity
+as nan, inf or -inf.</p>
+</div>
+<p>The float type is described in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesnumeric" target="_blank"><em>Numeric Types — int, float, long, complex</em></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="format">
+<tt>format</tt><big>(</big><em>value</em>, <em>format_spec</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#format" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p id="index-3">Convert a <em>value</em> to a “formatted” representation, as controlled by
+<em>format_spec</em>.  The interpretation of <em>format_spec</em> will depend on the type
+of the <em>value</em> argument, however there is a standard formatting syntax that
+is used by most built-in types: <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/string.html#formatspec" target="_blank"><em>Format Specification Mini-Language</em></a>.</p>
+<div>
+
+<p><tt>format(value, format_spec)</tt> merely calls
+<tt>value.__format__(format_spec)</tt>.</p>
+</div>
+<div>
+<p>New in version 2.6.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt>
+<em>class </em><tt>frozenset</tt><big>(</big><em>iterable</em><big>)</big></dt>
+<dd><p>Return a new <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#frozenset" title="frozenset" target="_blank"><tt>frozenset</tt></a> object, optionally with elements taken from
+<em>iterable</em>.  <tt>frozenset</tt> is a built-in class.  See <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#frozenset" title="frozenset" target="_blank"><tt>frozenset</tt></a> and
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#types-set" target="_blank"><em>Set Types — set, frozenset</em></a> for documentation about this class.</p>
+<p>For other containers see the built-in , ,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="tuple" target="_blank"><tt>tuple</tt></a>, and  classes, as well as the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/collections.html#module-collections" title="collections: High-performance datatypes" target="_blank"><tt>collections</tt></a>
+module.</p>
+<div>
+<p>New in version 2.4.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="getattr">
+<tt>getattr</tt><big>(</big><em>object</em>, <em>name</em>, <em>default</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#getattr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the value of the named attribute of <em>object</em>.  <em>name</em> must be a string.
+If the string is the name of one of the object’s attributes, the result is the
+value of that attribute.  For example, <tt>getattr(x, 'foobar')</tt> is equivalent to
+<tt>x.foobar</tt>.  If the named attribute does not exist, <em>default</em> is returned if
+provided, otherwise <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.AttributeError" title="exceptions.AttributeError" target="_blank"><tt>AttributeError</tt></a> is raised.</p>
+</dd></dl>
+
+<dl>
+<dt id="globals">
+<tt>globals</tt><big>(</big><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#globals" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a dictionary representing the current global symbol table. This is always
+the dictionary of the current module (inside a function or method, this is the
+module where it is defined, not the module from which it is called).</p>
+</dd></dl>
+
+<dl>
+<dt id="hasattr">
+<tt>hasattr</tt><big>(</big><em>object</em>, <em>name</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#hasattr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>The arguments are an object and a string.  The result is  if the string
+is the name of one of the object’s attributes, <tt>False</tt> if not. (This is
+implemented by calling <tt>getattr(object, name)</tt> and seeing whether it raises an
+exception or not.)</p>
+</dd></dl>
+
+<dl>
+<dt id="hash">
+<tt>hash</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#hash" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the hash value of the object (if it has one).  Hash values are integers.
+They are used to quickly compare dictionary keys during a dictionary lookup.
+Numeric values that compare equal have the same hash value (even if they are of
+different types, as is the case for 1 and 1.0).</p>
+</dd></dl>
+
+<dl>
+<dt id="help">
+<tt>help</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#help" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Invoke the built-in help system.  (This function is intended for interactive
+use.)  If no argument is given, the interactive help system starts on the
+interpreter console.  If the argument is a string, then the string is looked up
+as the name of a module, function, class, method, keyword, or documentation
+topic, and a help page is printed on the console.  If the argument is any other
+kind of object, a help page on the object is generated.</p>
+<p>This function is added to the built-in namespace by the  module.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="hex">
+<tt>hex</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#hex" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Convert an integer number (of any size) to a lowercase hexadecimal string
+prefixed with “0x”, for example:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt; 
+'0xff'
+&gt;&gt;&gt; 
+'-0x2a'
+&gt;&gt;&gt; 
+'0x1L'
+</pre></div>
+</div>
+<p>If x is not a Python  or  object, it has to
+define an __index__() method that returns an integer.</p>
+<p>See also <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#int" title="int" target="_blank"><tt>int()</tt></a> for converting a hexadecimal string to an
+integer using a base of 16.</p>
+<div>
+
+<p>To obtain a hexadecimal string representation for a float, use the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#float.hex" title="float.hex" target="_blank"><tt>float.hex()</tt></a> method.</p>
+</div>
+<div>
+<p>Changed in version 2.4: Formerly only returned an unsigned literal.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="id">
+<tt>id</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#id" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the “identity” of an object.  This is an integer (or long integer) which
+is guaranteed to be unique and constant for this object during its lifetime.
+Two objects with non-overlapping lifetimes may have the same 
+value.</p>
+<div>
+<p><strong>CPython implementation detail:</strong> This is the address of the object in memory.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="input">
+<tt>input</tt><big>(</big><em>prompt</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#input" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Equivalent to <tt>eval(raw_input(prompt))</tt>.</p>
+<p>This function does not catch user errors. If the input is not syntactically
+valid, a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.SyntaxError" title="exceptions.SyntaxError" target="_blank"><tt>SyntaxError</tt></a> will be raised. Other exceptions may be raised if
+there is an error during evaluation.</p>
+<p>If the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/readline.html#module-readline" title="readline: GNU readline support for Python. (Unix)" target="_blank"><tt>readline</tt></a> module was loaded, then <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#input" title="input" target="_blank"><tt>input()</tt></a> will use it to
+provide elaborate line editing and history features.</p>
+<p>Consider using the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#raw_input" title="raw_input" target="_blank"><tt>raw_input()</tt></a> function for general input from users.</p>
+</dd></dl>
+
+<dl>
+<dt id="int">
+<em>class </em><tt>int</tt><big>(</big><em>x=0</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#int" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<em>class </em><tt>int</tt><big>(</big><em>x</em>, <em>base=10</em><big>)</big></dt>
+<dd><p>Return an integer object constructed from a number or string <em>x</em>, or return  if no
+arguments are given.  If <em>x</em> is a number, it can be a plain integer, a long
+integer, or a floating point number.  If <em>x</em> is floating point, the conversion
+truncates towards zero.  If the argument is outside the integer range, the
+function returns a long object instead.</p>
+<p>If <em>x</em> is not a number or if <em>base</em> is given, then <em>x</em> must be a string or
+Unicode object representing an <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/lexical_analysis.html#integers" target="_blank"><em>integer literal</em></a> in radix
+<em>base</em>.  Optionally, the literal can be
+preceded by  or  (with no space in between) and surrounded by
+whitespace.  A base-n literal consists of the digits 0 to n-1, with 
+to  (or  to ) having
+values 10 to 35.  The default <em>base</em> is 10. The allowed values are 0 and 2-36.
+Base-2, -8, and -16 literals can be optionally prefixed with /,
+//, or /, as with integer literals in code.
+Base 0 means to interpret the string exactly as an integer literal, so that
+the actual base is 2, 8, 10, or 16.</p>
+<p>The integer type is described in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesnumeric" target="_blank"><em>Numeric Types — int, float, long, complex</em></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="isinstance">
+<tt>isinstance</tt><big>(</big><em>object</em>, <em>classinfo</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#isinstance" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return true if the <em>object</em> argument is an instance of the <em>classinfo</em> argument,
+or of a (direct, indirect or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-abstract-base-class" target="_blank"><em>virtual</em></a>) subclass
+thereof.  Also return true if <em>classinfo</em>
+is a type object (new-style class) and <em>object</em> is an object of that type or of
+a (direct, indirect or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-abstract-base-class" target="_blank"><em>virtual</em></a>) subclass
+thereof.  If <em>object</em> is not a class instance or
+an object of the given type, the function always returns false.  If <em>classinfo</em>
+is neither a class object nor a type object, it may be a tuple of class or type
+objects, or may recursively contain other such tuples (other sequence types are
+not accepted).  If <em>classinfo</em> is not a class, type, or tuple of classes, types,
+and such tuples, a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> exception is raised.</p>
+<div>
+<p>Changed in version 2.2: Support for a tuple of type information was added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="issubclass">
+<tt>issubclass</tt><big>(</big><em>class</em>, <em>classinfo</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#issubclass" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return true if <em>class</em> is a subclass (direct, indirect or <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-abstract-base-class" target="_blank"><em>virtual</em></a>) of <em>classinfo</em>.  A
+class is considered a subclass of itself. <em>classinfo</em> may be a tuple of class
+objects, in which case every entry in <em>classinfo</em> will be checked. In any other
+case, a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> exception is raised.</p>
+<div>
+<p>Changed in version 2.3: Support for a tuple of type information was added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="iter">
+<tt>iter</tt><big>(</big><em>o</em>, <em>sentinel</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#iter" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return an <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-iterator" target="_blank"><em>iterator</em></a> object.  The first argument is interpreted very differently
+depending on the presence of the second argument. Without a second argument, <em>o</em>
+must be a collection object which supports the iteration protocol (the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__iter__" title="object.__iter__" target="_blank"><tt>__iter__()</tt></a> method), or it must support the sequence protocol (the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getitem__" title="object.__getitem__" target="_blank"><tt>__getitem__()</tt></a> method with integer arguments starting at ).  If it
+does not support either of those protocols, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> is raised. If the
+second argument, <em>sentinel</em>, is given, then <em>o</em> must be a callable object.  The
+iterator created in this case will call <em>o</em> with no arguments for each call to
+its <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#iterator.next" title="iterator.next" target="_blank"><tt>next()</tt></a> method; if the value returned is equal to <em>sentinel</em>,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.StopIteration" title="exceptions.StopIteration" target="_blank"><tt>StopIteration</tt></a> will be raised, otherwise the value will be returned.</p>
+<p>One useful application of the second form of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#iter" title="iter" target="_blank"><tt>iter()</tt></a> is to read lines of
+a file until a certain line is reached.  The following example reads a file
+until the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/io.html#io.TextIOBase.readline" title="io.TextIOBase.readline" target="_blank"><tt>readline()</tt></a> method returns an empty string:</p>
+<div><div><pre> 'mydata.txt'  
+       readline 
+        process_line
+</pre></div>
+</div>
+<div>
+<p>New in version 2.2.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="len">
+<tt>len</tt><big>(</big><em>s</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#len" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the length (the number of items) of an object.  The argument may be a
+sequence (such as a string, bytes, tuple, list, or range) or a collection
+(such as a dictionary, set, or frozen set).</p>
+</dd></dl>
+
+<dl>
+<dt id="list">
+<em>class </em><tt>list</tt><big>(</big><em>iterable</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#list" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a list whose items are the same and in the same order as <em>iterable</em>‘s
+items.  <em>iterable</em> may be either a sequence, a container that supports
+iteration, or an iterator object.  If <em>iterable</em> is already a list, a copy is
+made and returned, similar to <tt>iterable[:]</tt>.  For instance, <tt>list('abc')</tt>
+returns <tt>['a',  </tt> and <tt>list(    </tt> returns .  If
+no argument is given, returns a new empty list, .</p>
+<p> is a mutable sequence type, as documented in
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq" target="_blank"><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a>. For other containers see the built in ,
+, and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="tuple" target="_blank"><tt>tuple</tt></a> classes, and the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/collections.html#module-collections" title="collections: High-performance datatypes" target="_blank"><tt>collections</tt></a> module.</p>
+</dd></dl>
+
+<dl>
+<dt id="locals">
+<tt>locals</tt><big>(</big><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#locals" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Update and return a dictionary representing the current local symbol table.
+Free variables are returned by <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#locals" title="locals" target="_blank"><tt>locals()</tt></a> when it is called in function
+blocks, but not in class blocks.</p>
+<div>
+
+<p>The contents of this dictionary should not be modified; changes may not
+affect the values of local and free variables used by the interpreter.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="long">
+<em>class </em><tt>long</tt><big>(</big><em>x=0</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#long" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<em>class </em><tt>long</tt><big>(</big><em>x</em>, <em>base=10</em><big>)</big></dt>
+<dd><p>Return a long integer object constructed from a string or number <em>x</em>.
+If the argument is a string, it
+must contain a possibly signed number of arbitrary size, possibly embedded in
+whitespace. The <em>base</em> argument is interpreted in the same way as for
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#int" title="int" target="_blank"><tt>int()</tt></a>, and may only be given when <em>x</em> is a string. Otherwise, the argument
+may be a plain or long integer or a floating point number, and a long integer
+with the same value is returned.    Conversion of floating point numbers to
+integers truncates (towards zero).  If no arguments are given, returns .</p>
+<p>The long type is described in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesnumeric" target="_blank"><em>Numeric Types — int, float, long, complex</em></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="map">
+<tt>map</tt><big>(</big><em>function</em>, <em>iterable</em>, <em>...</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#map" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Apply <em>function</em> to every item of <em>iterable</em> and return a list of the results.
+If additional <em>iterable</em> arguments are passed, <em>function</em> must take that many
+arguments and is applied to the items from all iterables in parallel.  If one
+iterable is shorter than another it is assumed to be extended with 
+items.  If <em>function</em> is , the identity function is assumed; if there
+are multiple arguments, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#map" title="map" target="_blank"><tt>map()</tt></a> returns a list consisting of tuples
+containing the corresponding items from all iterables (a kind of transpose
+operation).  The <em>iterable</em> arguments may be a sequence  or any iterable object;
+the result is always a list.</p>
+</dd></dl>
+
+<dl>
+<dt id="max">
+<tt>max</tt><big>(</big><em>iterable</em>, <em>key</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#max" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<tt>max</tt><big>(</big><em>arg1</em>, <em>arg2</em>, <em>*args</em>, <em>key</em><big>)</big></dt>
+<dd><p>Return the largest item in an iterable or the largest of two or more
+arguments.</p>
+<p>If one positional argument is provided, <em>iterable</em> must be a non-empty
+iterable (such as a non-empty string, tuple or list).  The largest item
+in the iterable is returned.  If two or more positional arguments are
+provided, the largest of the positional arguments is returned.</p>
+<p>The optional <em>key</em> argument specifies a one-argument ordering function like that
+used for <tt>list.sort()</tt>.  The <em>key</em> argument, if supplied, must be in keyword
+form (for example, <tt>max(a,b,c,key=func)</tt>).</p>
+<div>
+<p>Changed in version 2.5: Added support for the optional <em>key</em> argument.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt>
+<tt>memoryview</tt><big>(</big><em>obj</em><big>)</big></dt>
+<dd><p>Return a “memory view” object created from the given argument.  See
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typememoryview" target="_blank"><em>memoryview type</em></a> for more information.</p>
+</dd></dl>
+
+<dl>
+<dt id="min">
+<tt>min</tt><big>(</big><em>iterable</em>, <em>key</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#min" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<tt>min</tt><big>(</big><em>arg1</em>, <em>arg2</em>, <em>*args</em>, <em>key</em><big>)</big></dt>
+<dd><p>Return the smallest item in an iterable or the smallest of two or more
+arguments.</p>
+<p>If one positional argument is provided, <em>iterable</em> must be a non-empty
+iterable (such as a non-empty string, tuple or list).  The smallest item
+in the iterable is returned.  If two or more positional arguments are
+provided, the smallest of the positional arguments is returned.</p>
+<p>The optional <em>key</em> argument specifies a one-argument ordering function like that
+used for <tt>list.sort()</tt>.  The <em>key</em> argument, if supplied, must be in keyword
+form (for example, <tt>min(a,b,c,key=func)</tt>).</p>
+<div>
+<p>Changed in version 2.5: Added support for the optional <em>key</em> argument.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="next">
+<tt>next</tt><big>(</big><em>iterator</em>, <em>default</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#next" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Retrieve the next item from the <em>iterator</em> by calling its
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#iterator.next" title="iterator.next" target="_blank"><tt>next()</tt></a> method.  If <em>default</em> is given, it is returned if the
+iterator is exhausted, otherwise <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.StopIteration" title="exceptions.StopIteration" target="_blank"><tt>StopIteration</tt></a> is raised.</p>
+<div>
+<p>New in version 2.6.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="object">
+<em>class </em><tt>object</tt><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#object" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a new featureless object.  <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#object" title="object" target="_blank"><tt>object</tt></a> is a base for all new style
+classes.  It has the methods that are common to all instances of new style
+classes.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+<div>
+<p>Changed in version 2.3: This function does not accept any arguments. Formerly, it accepted arguments but
+ignored them.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="oct">
+<tt>oct</tt><big>(</big><em>x</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#oct" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Convert an integer number (of any size) to an octal string.  The result is a
+valid Python expression.</p>
+<div>
+<p>Changed in version 2.4: Formerly only returned an unsigned literal.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="open">
+<tt>open</tt><big>(</big><em>name</em>, <em>mode</em>, <em>buffering</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#open" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Open a file, returning an object of the  type described in
+section <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#bltin-file-objects" target="_blank"><em>File Objects</em></a>.  If the file cannot be opened,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.IOError" title="exceptions.IOError" target="_blank"><tt>IOError</tt></a> is raised.  When opening a file, it’s preferable to use
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#open" title="open" target="_blank"><tt>open()</tt></a> instead of invoking the  constructor directly.</p>
+<p>The first two arguments are the same as for <tt>stdio</tt>‘s <tt>fopen()</tt>:
+<em>name</em> is the file name to be opened, and <em>mode</em> is a string indicating how
+the file is to be opened.</p>
+<p>The most commonly-used values of <em>mode</em> are  for reading,  for
+writing (truncating the file if it already exists), and  for appending
+(which on <em>some</em> Unix systems means that <em>all</em> writes append to the end of the
+file regardless of the current seek position).  If <em>mode</em> is omitted, it
+defaults to .  The default is to use text mode, which may convert
+ characters to a platform-specific representation on writing and back
+on reading.  Thus, when opening a binary file, you should append  to
+the <em>mode</em> value to open the file in binary mode, which will improve
+portability.  (Appending  is useful even on systems that don’t treat
+binary and text files differently, where it serves as documentation.)  See below
+for more possible values of <em>mode</em>.</p>
+<p id="index-4">The optional <em>buffering</em> argument specifies the file’s desired buffer size: 0
+means unbuffered, 1 means line buffered, any other positive value means use a
+buffer of (approximately) that size (in bytes).  A negative <em>buffering</em> means
+to use the system default, which is usually line buffered for tty devices and
+fully buffered for other files.  If omitted, the system default is used. <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#id4" id="id2" target="_blank">[2]</a></p>
+<p>Modes ,  and  open the file for updating (reading and writing);
+note that  truncates the file.  Append  to the mode to open the file in
+binary mode, on systems that differentiate between binary and text files; on
+systems that don’t have this distinction, adding the  has no effect.</p>
+<p id="index-5">In addition to the standard <tt>fopen()</tt> values <em>mode</em> may be  or
+.  Python is usually built with <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-universal-newlines" target="_blank"><em>universal newlines</em></a> support;
+supplying  opens the file as a text file, but lines may be terminated
+by any of the following: the Unix end-of-line convention ,  the
+Macintosh convention , or the Windows convention <tt>'\r\n'</tt>. All of
+these external representations are seen as  by the Python program.
+If Python is built without universal newlines support a <em>mode</em> with 
+is the same as normal text mode.  Note that file objects so opened also have
+an attribute called <tt>newlines</tt> which has a value of  (if no
+newlines have yet been seen), , , <tt>'\r\n'</tt>, or a tuple
+containing all the newline types seen.</p>
+<p>Python enforces that the mode, after stripping , begins with ,
+ or .</p>
+<p>Python provides many file handling modules including
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/fileinput.html#module-fileinput" title="fileinput: Loop over standard input or a list of files." target="_blank"><tt>fileinput</tt></a>, , <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/os.path.html#module-os.path" title="os.path: Operations on pathnames." target="_blank"><tt>os.path</tt></a>, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/tempfile.html#module-tempfile" title="tempfile: Generate temporary files and directories." target="_blank"><tt>tempfile</tt></a>, and
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/shutil.html#module-shutil" title="shutil: High-level file operations, including copying." target="_blank"><tt>shutil</tt></a>.</p>
+<div>
+<p>Changed in version 2.5: Restriction on first letter of mode string introduced.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="ord">
+<tt>ord</tt><big>(</big><em>c</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#ord" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Given a string of length one, return an integer representing the Unicode code
+point of the character when the argument is a unicode object, or the value of
+the byte when the argument is an 8-bit string. For example, <tt>ord('a')</tt> returns
+the integer , <tt>ord(u'\u2020')</tt> returns .  This is the inverse of
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#chr" title="chr" target="_blank"><tt>chr()</tt></a> for 8-bit strings and of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unichr" title="unichr" target="_blank"><tt>unichr()</tt></a> for unicode objects.  If a
+unicode argument is given and Python was built with UCS2 Unicode, then the
+character’s code point must be in the range [0..65535] inclusive; otherwise the
+string length is two, and a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> will be raised.</p>
+</dd></dl>
+
+<dl>
+<dt id="pow">
+<tt>pow</tt><big>(</big><em>x</em>, <em>y</em>, <em>z</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#pow" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return <em>x</em> to the power <em>y</em>; if <em>z</em> is present, return <em>x</em> to the power <em>y</em>,
+modulo <em>z</em> (computed more efficiently than <tt>pow(x,   </tt>). The two-argument
+form <tt>pow(x, </tt> is equivalent to using the power operator: .</p>
+<p>The arguments must have numeric types.  With mixed operand types, the coercion
+rules for binary arithmetic operators apply.  For int and long int operands, the
+result has the same type as the operands (after coercion) unless the second
+argument is negative; in that case, all arguments are converted to float and a
+float result is delivered.  For example, <tt>10**2</tt> returns , but
+<tt>10**-2</tt> returns .  (This last feature was added in Python 2.2.  In
+Python 2.1 and before, if both arguments were of integer types and the second
+argument was negative, an exception was raised.) If the second argument is
+negative, the third argument must be omitted. If <em>z</em> is present, <em>x</em> and <em>y</em>
+must be of integer types, and <em>y</em> must be non-negative.  (This restriction was
+added in Python 2.2.  In Python 2.1 and before, floating 3-argument <tt>pow()</tt>
+returned platform-dependent results depending on floating-point rounding
+accidents.)</p>
+</dd></dl>
+
+<dl>
+<dt id="print">
+<tt>print</tt><big>(</big><em>*objects</em>, <em>sep=' '</em>, <em>end='\n'</em>, <em>file=sys.stdout</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#print" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Print <em>objects</em> to the stream <em>file</em>, separated by <em>sep</em> and followed by
+<em>end</em>.  <em>sep</em>, <em>end</em> and <em>file</em>, if present, must be given as keyword
+arguments.</p>
+<p>All non-keyword arguments are converted to strings like <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#str" title="str" target="_blank"><tt>str()</tt></a> does and
+written to the stream, separated by <em>sep</em> and followed by <em>end</em>.  Both <em>sep</em>
+and <em>end</em> must be strings; they can also be , which means to use the
+default values.  If no <em>objects</em> are given, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#print" title="print" target="_blank"><tt>print()</tt></a> will just write
+<em>end</em>.</p>
+<p>The <em>file</em> argument must be an object with a <tt>write(string)</tt> method; if it
+is not present or , <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/sys.html#sys.stdout" title="sys.stdout" target="_blank"><tt>sys.stdout</tt></a> will be used.  Output buffering
+is determined by <em>file</em>.  Use <tt>file.flush()</tt> to ensure, for instance,
+immediate appearance on a screen.</p>
+<div>
+
+<p>This function is not normally available as a built-in since the name
+<tt>print</tt> is recognized as the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#print" target="_blank"><tt>print</tt></a> statement.  To disable the
+statement and use the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#print" title="print" target="_blank"><tt>print()</tt></a> function, use this future statement at
+the top of your module:</p>
+<div><div><pre> __future__ import print_function
+</pre></div>
+</div>
+</div>
+<div>
+<p>New in version 2.6.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="property">
+<em>class </em><tt>property</tt><big>(</big><em>fget</em>, <em>fset</em>, <em>fdel</em>, <em>doc</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#property" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a property attribute for <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-new-style-class" target="_blank"><em>new-style class</em></a>es (classes that
+derive from <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#object" title="object" target="_blank"><tt>object</tt></a>).</p>
+<p><em>fget</em> is a function for getting an attribute value.  <em>fset</em> is a function
+for setting an attribute value. <em>fdel</em> is a function for deleting an attribute
+value.  And <em>doc</em> creates a docstring for the attribute.</p>
+<p>A typical use is to define a managed attribute :</p>
+<div><div><pre>class object
+     __init__
+          
+
+     
+        return 
+
+      value
+          value
+
+     
+         
+
+      property   "I'm the 'x' property."
+</pre></div>
+</div>
+<p>If <em>c</em> is an instance of <em>C</em>,  will invoke the getter,
+<tt>  value</tt> will invoke the setter and  the deleter.</p>
+<p>If given, <em>doc</em> will be the docstring of the property attribute. Otherwise, the
+property will copy <em>fget</em>‘s docstring (if it exists).  This makes it possible to
+create read-only properties easily using <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#property" title="property" target="_blank"><tt>property()</tt></a> as a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-decorator" target="_blank"><em>decorator</em></a>:</p>
+<div><div><pre>class Parrotobject
+     __init__
+        _voltage  100000
+
+    @property
+     voltage
+        """Get the current voltage."""
+        return _voltage
+</pre></div>
+</div>
+<p>The <tt>@property</tt> decorator turns the <tt>voltage()</tt> method into a “getter”
+for a read-only attribute with the same name, and it sets the docstring for
+<em>voltage</em> to “Get the current voltage.”</p>
+<p>A property object has <tt>getter</tt>, <tt>setter</tt>,
+and <tt>deleter</tt> methods usable as decorators that create a
+copy of the property with the corresponding accessor function set to the
+decorated function.  This is best explained with an example:</p>
+<div><div><pre>class object
+     __init__
+          
+
+    @property
+     
+        """I'm the 'x' property."""
+        return 
+
+    @x.setter
+      value
+          value
+
+    @x.deleter
+     
+         
+</pre></div>
+</div>
+<p>This code is exactly equivalent to the first example.  Be sure to give the
+additional functions the same name as the original property ( in this
+case.)</p>
+<p>The returned property object also has the attributes , , and
+ corresponding to the constructor arguments.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+<div>
+<p>Changed in version 2.5: Use <em>fget</em>‘s docstring if no <em>doc</em> given.</p>
+</div>
+<div>
+<p>Changed in version 2.6: The <tt>getter</tt>, <tt>setter</tt>, and <tt>deleter</tt> attributes were added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="range">
+<tt>range</tt><big>(</big><em>stop</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#range" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<tt>range</tt><big>(</big><em>start</em>, <em>stop</em>, <em>step</em><big>)</big></dt>
+<dd><p>This is a versatile function to create lists containing arithmetic progressions.
+It is most often used in  loops.  The arguments must be plain
+integers.  If the <em>step</em> argument is omitted, it defaults to .  If the
+<em>start</em> argument is omitted, it defaults to .  The full form returns a list
+of plain integers <tt>[start, start  step, start    step, </tt>.  If <em>step</em>
+is positive, the last element is the largest <tt>start    </tt> less than
+<em>stop</em>; if <em>step</em> is negative, the last element is the smallest <tt>start   
+</tt> greater than <em>stop</em>.  <em>step</em> must not be zero (or else <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.ValueError" title="exceptions.ValueError" target="_blank"><tt>ValueError</tt></a>
+is raised).  Example:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt; range
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+&gt;&gt;&gt; range 
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+&gt;&gt;&gt; range  
+[0, 5, 10, 15, 20, 25]
+&gt;&gt;&gt; range  
+[0, 3, 6, 9]
+&gt;&gt;&gt; range  
+[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+&gt;&gt;&gt; range
+
+&gt;&gt;&gt; range 
+
+</pre></div>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="raw_input">
+<tt>raw_input</tt><big>(</big><em>prompt</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#raw_input" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>If the <em>prompt</em> argument is present, it is written to standard output without a
+trailing newline.  The function then reads a line from input, converts it to a
+string (stripping a trailing newline), and returns that. When EOF is read,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.EOFError" title="exceptions.EOFError" target="_blank"><tt>EOFError</tt></a> is raised. Example:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt;   raw_input'--&gt; '
+--&gt; Monty Python's Flying Circus
+&gt;&gt;&gt; 
+"Monty Python's Flying Circus"
+</pre></div>
+</div>
+<p>If the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/readline.html#module-readline" title="readline: GNU readline support for Python. (Unix)" target="_blank"><tt>readline</tt></a> module was loaded, then <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#raw_input" title="raw_input" target="_blank"><tt>raw_input()</tt></a> will use it to
+provide elaborate line editing and history features.</p>
+</dd></dl>
+
+<dl>
+<dt id="reduce">
+<tt>reduce</tt><big>(</big><em>function</em>, <em>iterable</em>, <em>initializer</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#reduce" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Apply <em>function</em> of two arguments cumulatively to the items of <em>iterable</em>, from
+left to right, so as to reduce the iterable to a single value.  For example,
+<tt>reduce(lambda        </tt> calculates <tt>((((1+2)+3)+4)+5)</tt>.
+The left argument, <em>x</em>, is the accumulated value and the right argument, <em>y</em>, is
+the update value from the <em>iterable</em>.  If the optional <em>initializer</em> is present,
+it is placed before the items of the iterable in the calculation, and serves as
+a default when the iterable is empty.  If <em>initializer</em> is not given and
+<em>iterable</em> contains only one item, the first item is returned.
+Roughly equivalent to:</p>
+<div><div><pre> reducefunction iterable initializer
+      iterable
+     initializer  
+        
+            initializer  
+        except StopIteration
+            raise TypeError'reduce() of empty sequence with no initial value'
+    accum_value  initializer
+       
+        accum_value  functionaccum_value 
+    return accum_value
+</pre></div>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="reload">
+<tt>reload</tt><big>(</big><em>module</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#reload" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Reload a previously imported <em>module</em>.  The argument must be a module object, so
+it must have been successfully imported before.  This is useful if you have
+edited the module source file using an external editor and want to try out the
+new version without leaving the Python interpreter.  The return value is the
+module object (the same as the <em>module</em> argument).</p>
+<p>When <tt>reload(module)</tt> is executed:</p>
+<ul>
+<li>Python modules’ code is recompiled and the module-level code reexecuted,
+defining a new set of objects which are bound to names in the module’s
+dictionary.  The  function of extension modules is not called a second
+time.</li>
+<li>As with all other objects in Python the old objects are only reclaimed after
+their reference counts drop to zero.</li>
+<li>The names in the module namespace are updated to point to any new or changed
+objects.</li>
+<li>Other references to the old objects (such as names external to the module) are
+not rebound to refer to the new objects and must be updated in each namespace
+where they occur if that is desired.</li>
+</ul>
+<p>There are a number of other caveats:</p>
+<p>If a module is syntactically correct but its initialization fails, the first
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement for it does not bind its name locally, but does
+store a (partially initialized) module object in <tt>sys.modules</tt>.  To reload the
+module you must first <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> it again (this will bind the name to the
+partially initialized module object) before you can <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#reload" title="reload" target="_blank"><tt>reload()</tt></a> it.</p>
+<p>When a module is reloaded, its dictionary (containing the module’s global
+variables) is retained.  Redefinitions of names will override the old
+definitions, so this is generally not a problem.  If the new version of a module
+does not define a name that was defined by the old version, the old definition
+remains.  This feature can be used to the module’s advantage if it maintains a
+global table or cache of objects — with a  statement it can test
+for the table’s presence and skip its initialization if desired:</p>
+<div><div><pre>    cache
+except NameError
+    cache  
+</pre></div>
+</div>
+<p>It is legal though generally not very useful to reload built-in or dynamically
+loaded modules, except for , <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/__main__.html#module-__main__" title="__main__: The environment where the top-level script is run." target="_blank"><tt>__main__</tt></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/__builtin__.html#module-__builtin__" title="__builtin__: The module that provides the built-in namespace." target="_blank"><tt>__builtin__</tt></a>.
+In many cases, however, extension modules are not designed to be initialized
+more than once, and may fail in arbitrary ways when reloaded.</p>
+<p>If a module imports objects from another module using  ...
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> ..., calling <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#reload" title="reload" target="_blank"><tt>reload()</tt></a> for the other module does not
+redefine the objects imported from it — one way around this is to re-execute
+the  statement, another is to use <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> and qualified
+names (<em>module</em>.*name*) instead.</p>
+<p>If a module instantiates instances of a class, reloading the module that defines
+the class does not affect the method definitions of the instances — they
+continue to use the old class definition.  The same is true for derived classes.</p>
+</dd></dl>
+
+<dl>
+<dt id="repr">
+<tt>repr</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#repr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a string containing a printable representation of an object.  This is
+the same value yielded by conversions (reverse quotes).  It is sometimes
+useful to be able to access this operation as an ordinary function.  For many
+types, this function makes an attempt to return a string that would yield an
+object with the same value when passed to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a>, otherwise the
+representation is a string enclosed in angle brackets that contains the name
+of the type of the object together with additional information often
+including the name and address of the object.  A class can control what this
+function returns for its instances by defining a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__repr__" title="object.__repr__" target="_blank"><tt>__repr__()</tt></a> method.</p>
+</dd></dl>
+
+<dl>
+<dt id="reversed">
+<tt>reversed</tt><big>(</big><em>seq</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#reversed" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a reverse <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-iterator" target="_blank"><em>iterator</em></a>.  <em>seq</em> must be an object which has
+a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__reversed__" title="object.__reversed__" target="_blank"><tt>__reversed__()</tt></a> method or supports the sequence protocol (the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__len__" title="object.__len__" target="_blank"><tt>__len__()</tt></a> method and the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getitem__" title="object.__getitem__" target="_blank"><tt>__getitem__()</tt></a> method with integer
+arguments starting at ).</p>
+<div>
+<p>New in version 2.4.</p>
+</div>
+<div>
+<p>Changed in version 2.6: Added the possibility to write a custom <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__reversed__" title="object.__reversed__" target="_blank"><tt>__reversed__()</tt></a> method.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="round">
+<tt>round</tt><big>(</big><em>number</em>, <em>ndigits</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#round" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the floating point value <em>number</em> rounded to <em>ndigits</em> digits after
+the decimal point.  If <em>ndigits</em> is omitted, it defaults to zero. The result
+is a floating point number.  Values are rounded to the closest multiple of
+10 to the power minus <em>ndigits</em>; if two multiples are equally close,
+rounding is done away from 0 (so, for example, <tt>round(0.5)</tt> is  and
+<tt>round(-0.5)</tt> is ).</p>
+<div>
+
+<p>The behavior of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#round" title="round" target="_blank"><tt>round()</tt></a> for floats can be surprising: for example,
+<tt>round(2.675, </tt> gives  instead of the expected .
+This is not a bug: it’s a result of the fact that most decimal fractions
+can’t be represented exactly as a float.  See <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/tutorial/floatingpoint.html#tut-fp-issues" target="_blank"><em>Floating Point Arithmetic:  Issues and Limitations</em></a> for
+more information.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt>
+<em>class </em><tt>set</tt><big>(</big><em>iterable</em><big>)</big></dt>
+<dd><p>Return a new  object, optionally with elements taken from
+<em>iterable</em>.   is a built-in class.  See  and
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#types-set" target="_blank"><em>Set Types — set, frozenset</em></a> for documentation about this class.</p>
+<p>For other containers see the built-in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#frozenset" title="frozenset" target="_blank"><tt>frozenset</tt></a>, ,
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="tuple" target="_blank"><tt>tuple</tt></a>, and  classes, as well as the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/collections.html#module-collections" title="collections: High-performance datatypes" target="_blank"><tt>collections</tt></a>
+module.</p>
+<div>
+<p>New in version 2.4.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="setattr">
+<tt>setattr</tt><big>(</big><em>object</em>, <em>name</em>, <em>value</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#setattr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>This is the counterpart of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#getattr" title="getattr" target="_blank"><tt>getattr()</tt></a>.  The arguments are an object, a
+string and an arbitrary value.  The string may name an existing attribute or a
+new attribute.  The function assigns the value to the attribute, provided the
+object allows it.  For example, <tt>setattr(x, 'foobar', </tt> is equivalent to
+<tt>x.foobar  </tt>.</p>
+</dd></dl>
+
+<dl>
+<dt id="slice">
+<em>class </em><tt>slice</tt><big>(</big><em>stop</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#slice" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<em>class </em><tt>slice</tt><big>(</big><em>start</em>, <em>stop</em>, <em>step</em><big>)</big></dt>
+<dd><p id="index-6">Return a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-slice" target="_blank"><em>slice</em></a> object representing the set of indices specified by
+<tt>range(start, stop, step)</tt>.  The <em>start</em> and <em>step</em> arguments default to
+.  Slice objects have read-only data attributes <tt>start</tt>,
+ and  which merely return the argument
+values (or their default).  They have no other explicit functionality;
+however they are used by Numerical Python and other third party extensions.
+Slice objects are also generated when extended indexing syntax is used.  For
+example: <tt>a[start:stop:step]</tt> or <tt>a[start:stop, </tt>.  See
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/itertools.html#itertools.islice" title="itertools.islice" target="_blank"><tt>itertools.islice()</tt></a> for an alternate version that returns an iterator.</p>
+</dd></dl>
+
+<dl>
+<dt id="sorted">
+<tt>sorted</tt><big>(</big><em>iterable</em>, <em>cmp</em>, <em>key</em>, <em>reverse</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#sorted" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a new sorted list from the items in <em>iterable</em>.</p>
+<p>The optional arguments <em>cmp</em>, <em>key</em>, and <em>reverse</em> have the same meaning as
+those for the <tt>list.sort()</tt> method (described in section
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq-mutable" target="_blank"><em>Mutable Sequence Types</em></a>).</p>
+<p><em>cmp</em> specifies a custom comparison function of two arguments (iterable
+elements) which should return a negative, zero or positive number depending on
+whether the first argument is considered smaller than, equal to, or larger than
+the second argument: <tt>cmp=lambda  cmp(x.lower(), y.lower())</tt>.  The default
+value is .</p>
+<p><em>key</em> specifies a function of one argument that is used to extract a comparison
+key from each list element: <tt>key=str.lower</tt>.  The default value is 
+(compare the elements directly).</p>
+<p><em>reverse</em> is a boolean value.  If set to , then the list elements are
+sorted as if each comparison were reversed.</p>
+<p>In general, the <em>key</em> and <em>reverse</em> conversion processes are much faster
+than specifying an equivalent <em>cmp</em> function.  This is because <em>cmp</em> is
+called multiple times for each list element while <em>key</em> and <em>reverse</em> touch
+each element only once.  Use <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functools.html#functools.cmp_to_key" title="functools.cmp_to_key" target="_blank"><tt>functools.cmp_to_key()</tt></a> to convert an
+old-style <em>cmp</em> function to a <em>key</em> function.</p>
+<p>The built-in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#sorted" title="sorted" target="_blank"><tt>sorted()</tt></a> function is guaranteed to be stable. A sort is
+stable if it guarantees not to change the relative order of elements that
+compare equal — this is helpful for sorting in multiple passes (for
+example, sort by department, then by salary grade).</p>
+<p>For sorting examples and a brief sorting tutorial, see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/howto/sorting.html#sortinghowto" target="_blank"><em>Sorting HOW TO</em></a>.</p>
+<div>
+<p>New in version 2.4.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="staticmethod">
+<tt>staticmethod</tt><big>(</big><em>function</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#staticmethod" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a static method for <em>function</em>.</p>
+<p>A static method does not receive an implicit first argument. To declare a static
+method, use this idiom:</p>
+<div><div><pre>class object
+    @staticmethod
+       
+        
+</pre></div>
+</div>
+<p>The <tt>@staticmethod</tt> form is a function <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/glossary.html#term-decorator" target="_blank"><em>decorator</em></a> – see the
+description of function definitions in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/compound_stmts.html#function" target="_blank"><em>Function definitions</em></a> for details.</p>
+<p>It can be called either on the class (such as <tt>C.f()</tt>) or on an instance (such
+as <tt>C().f()</tt>).  The instance is ignored except for its class.</p>
+<p>Static methods in Python are similar to those found in Java or C++. Also see
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#classmethod" title="classmethod" target="_blank"><tt>classmethod()</tt></a> for a variant that is useful for creating alternate
+class constructors.</p>
+<p>For more information on static methods, consult the documentation on the
+standard type hierarchy in <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#types" target="_blank"><em>The standard type hierarchy</em></a>.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+<div>
+<p>Changed in version 2.4: Function decorator syntax added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="str">
+<em>class </em><tt>str</tt><big>(</big><em>object=''</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#str" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a string containing a nicely printable representation of an object.  For
+strings, this returns the string itself.  The difference with <tt>repr(object)</tt>
+is that <tt>str(object)</tt> does not always attempt to return a string that is
+acceptable to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#eval" title="eval" target="_blank"><tt>eval()</tt></a>; its goal is to return a printable string.  If no
+argument is given, returns the empty string, .</p>
+<p>For more information on strings see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq" target="_blank"><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a> which describes sequence
+functionality (strings are sequences), and also the string-specific methods
+described in the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#string-methods" target="_blank"><em>String Methods</em></a> section. To output formatted strings
+use template strings or the  operator described in the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#string-formatting" target="_blank"><em>String Formatting Operations</em></a> section. In addition see the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/strings.html#stringservices" target="_blank"><em>String Services</em></a>
+section. See also <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unicode" title="unicode" target="_blank"><tt>unicode()</tt></a>.</p>
+</dd></dl>
+
+<dl>
+<dt id="sum">
+<tt>sum</tt><big>(</big><em>iterable</em>, <em>start</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#sum" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Sums <em>start</em> and the items of an <em>iterable</em> from left to right and returns the
+total.  <em>start</em> defaults to . The <em>iterable</em>‘s items are normally numbers,
+and the start value is not allowed to be a string.</p>
+<p>For some use cases, there are good alternatives to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#sum" title="sum" target="_blank"><tt>sum()</tt></a>.
+The preferred, fast way to concatenate a sequence of strings is by calling
+<tt>''.join(sequence)</tt>.  To add floating point values with extended precision,
+see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/math.html#math.fsum" title="math.fsum" target="_blank"><tt>math.fsum()</tt></a>.  To concatenate a series of iterables, consider using
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/itertools.html#itertools.chain" title="itertools.chain" target="_blank"><tt>itertools.chain()</tt></a>.</p>
+<div>
+<p>New in version 2.3.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="super">
+<tt>super</tt><big>(</big><em>type</em>, <em>object-or-type</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a proxy object that delegates method calls to a parent or sibling
+class of <em>type</em>.  This is useful for accessing inherited methods that have
+been overridden in a class. The search order is same as that used by
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#getattr" title="getattr" target="_blank"><tt>getattr()</tt></a> except that the <em>type</em> itself is skipped.</p>
+<p>The <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#class.__mro__" title="class.__mro__" target="_blank"><tt>__mro__</tt></a> attribute of the <em>type</em> lists the method
+resolution search order used by both <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#getattr" title="getattr" target="_blank"><tt>getattr()</tt></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="super" target="_blank"><tt>super()</tt></a>.  The
+attribute is dynamic and can change whenever the inheritance hierarchy is
+updated.</p>
+<p>If the second argument is omitted, the super object returned is unbound.  If
+the second argument is an object, <tt>isinstance(obj, type)</tt> must be true.  If
+the second argument is a type, <tt>issubclass(type2, type)</tt> must be true (this
+is useful for classmethods).</p>
+
+<p>There are two typical use cases for <em>super</em>.  In a class hierarchy with
+single inheritance, <em>super</em> can be used to refer to parent classes without
+naming them explicitly, thus making the code more maintainable.  This use
+closely parallels the use of <em>super</em> in other programming languages.</p>
+<p>The second use case is to support cooperative multiple inheritance in a
+dynamic execution environment.  This use case is unique to Python and is
+not found in statically compiled languages or languages that only support
+single inheritance.  This makes it possible to implement “diamond diagrams”
+where multiple base classes implement the same method.  Good design dictates
+that this method have the same calling signature in every case (because the
+order of calls is determined at runtime, because that order adapts
+to changes in the class hierarchy, and because that order can include
+sibling classes that are unknown prior to runtime).</p>
+<p>For both use cases, a typical superclass call looks like this:</p>
+<div><div><pre>class 
+     method 
+        super method
+</pre></div>
+</div>
+<p>Note that <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="super" target="_blank"><tt>super()</tt></a> is implemented as part of the binding process for
+explicit dotted attribute lookups such as <tt>super().__getitem__(name)</tt>.
+It does so by implementing its own <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__getattribute__" title="object.__getattribute__" target="_blank"><tt>__getattribute__()</tt></a> method for searching
+classes in a predictable order that supports cooperative multiple inheritance.
+Accordingly, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="super" target="_blank"><tt>super()</tt></a> is undefined for implicit lookups using statements or
+operators such as <tt>super()[name]</tt>.</p>
+<p>Also note that <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="super" target="_blank"><tt>super()</tt></a> is not limited to use inside methods.  The two
+argument form specifies the arguments exactly and makes the appropriate
+references.</p>
+<p>For practical suggestions on how to design cooperative classes using
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#super" title="super" target="_blank"><tt>super()</tt></a>, see <a href="http://rhettinger.wordpress.com/2011/05/26/super-considered-super/" target="_blank">guide to using super()<sup class="readableLinkFootnote">[2]</sup></a>.</p>
+<div>
+<p>New in version 2.2.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="tuple">
+<tt>tuple</tt><big>(</big><em>iterable</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return a tuple whose items are the same and in the same order as <em>iterable</em>‘s
+items.  <em>iterable</em> may be a sequence, a container that supports iteration, or an
+iterator object. If <em>iterable</em> is already a tuple, it is returned unchanged.
+For instance, <tt>tuple('abc')</tt> returns <tt>('a',  </tt> and <tt>tuple([1, 
+</tt> returns .  If no argument is given, returns a new empty
+tuple, .</p>
+<p><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#tuple" title="tuple" target="_blank"><tt>tuple</tt></a> is an immutable sequence type, as documented in
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq" target="_blank"><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a>. For other containers see the built in ,
+, and  classes, and the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/collections.html#module-collections" title="collections: High-performance datatypes" target="_blank"><tt>collections</tt></a> module.</p>
+</dd></dl>
+
+<dl>
+<dt id="type">
+<em>class </em><tt>type</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#type" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<em>class </em><tt>type</tt><big>(</big><em>name</em>, <em>bases</em>, <em>dict</em><big>)</big></dt>
+<dd><p id="index-7">With one argument, return the type of an <em>object</em>.  The return value is a
+type object.  The <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#isinstance" title="isinstance" target="_blank"><tt>isinstance()</tt></a> built-in function is recommended for
+testing the type of an object.</p>
+<p>With three arguments, return a new type object.  This is essentially a
+dynamic form of the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/compound_stmts.html#class" target="_blank"><tt>class</tt></a> statement. The <em>name</em> string is the
+class name and becomes the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#class.__name__" title="class.__name__" target="_blank"><tt>__name__</tt></a> attribute; the <em>bases</em> tuple
+itemizes the base classes and becomes the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#class.__bases__" title="class.__bases__" target="_blank"><tt>__bases__</tt></a> attribute;
+and the <em>dict</em> dictionary is the namespace containing definitions for class
+body and becomes the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#object.__dict__" title="object.__dict__" target="_blank"><tt>__dict__</tt></a>  attribute.  For example, the
+following two statements create identical  objects:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt; class object
+      
+
+&gt;&gt;&gt;    object 
+</pre></div>
+</div>
+<div>
+<p>New in version 2.2.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="unichr">
+<tt>unichr</tt><big>(</big><em>i</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unichr" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the Unicode string of one character whose Unicode code is the integer
+<em>i</em>.  For example, <tt>unichr(97)</tt> returns the string .  This is the
+inverse of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#ord" title="ord" target="_blank"><tt>ord()</tt></a> for Unicode strings.  The valid range for the argument
+depends how Python was configured – it may be either UCS2 [0..0xFFFF] or UCS4
+[0..0x10FFFF]. <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.ValueError" title="exceptions.ValueError" target="_blank"><tt>ValueError</tt></a> is raised otherwise. For ASCII and 8-bit
+strings see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#chr" title="chr" target="_blank"><tt>chr()</tt></a>.</p>
+<div>
+<p>New in version 2.0.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="unicode">
+<tt>unicode</tt><big>(</big><em>object=''</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#unicode" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<tt>unicode</tt><big>(</big><em>object</em>, <em>encoding</em>, <em>errors</em><big>)</big></dt>
+<dd><p>Return the Unicode string version of <em>object</em> using one of the following modes:</p>
+<p>If <em>encoding</em> and/or <em>errors</em> are given, <tt>unicode()</tt> will decode the object
+which can either be an 8-bit string or a character buffer using the codec for
+<em>encoding</em>. The <em>encoding</em> parameter is a string giving the name of an encoding;
+if the encoding is not known, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.LookupError" title="exceptions.LookupError" target="_blank"><tt>LookupError</tt></a> is raised. Error handling is
+done according to <em>errors</em>; this specifies the treatment of characters which are
+invalid in the input encoding.  If <em>errors</em> is <tt>'strict'</tt> (the default), a
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.ValueError" title="exceptions.ValueError" target="_blank"><tt>ValueError</tt></a> is raised on errors, while a value of <tt>'ignore'</tt> causes
+errors to be silently ignored, and a value of <tt>'replace'</tt> causes the official
+Unicode replacement character, <tt>U+FFFD</tt>, to be used to replace input
+characters which cannot be decoded.  See also the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/codecs.html#module-codecs" title="codecs: Encode and decode data and streams." target="_blank"><tt>codecs</tt></a> module.</p>
+<p>If no optional parameters are given, <tt>unicode()</tt> will mimic the behaviour of
+<tt>str()</tt> except that it returns Unicode strings instead of 8-bit strings. More
+precisely, if <em>object</em> is a Unicode string or subclass it will return that
+Unicode string without any additional decoding applied.</p>
+<p>For objects which provide a <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__unicode__" title="object.__unicode__" target="_blank"><tt>__unicode__()</tt></a> method, it will call this method
+without arguments to create a Unicode string. For all other objects, the 8-bit
+string version or representation is requested and then converted to a Unicode
+string using the codec for the default encoding in <tt>'strict'</tt> mode.</p>
+<p>For more information on Unicode strings see <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq" target="_blank"><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a> which describes
+sequence functionality (Unicode strings are sequences), and also the
+string-specific methods described in the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#string-methods" target="_blank"><em>String Methods</em></a> section. To
+output formatted strings use template strings or the  operator described
+in the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#string-formatting" target="_blank"><em>String Formatting Operations</em></a> section. In addition see the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/strings.html#stringservices" target="_blank"><em>String Services</em></a> section. See also <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#str" title="str" target="_blank"><tt>str()</tt></a>.</p>
+<div>
+<p>New in version 2.0.</p>
+</div>
+<div>
+<p>Changed in version 2.2: Support for <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/datamodel.html#object.__unicode__" title="object.__unicode__" target="_blank"><tt>__unicode__()</tt></a> added.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="vars">
+<tt>vars</tt><big>(</big><em>object</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#vars" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>Return the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#object.__dict__" title="object.__dict__" target="_blank"><tt>__dict__</tt></a> attribute for a module, class, instance,
+or any other object with a <tt>__dict__</tt> attribute.</p>
+<p>Objects such as modules and instances have an updateable <tt>__dict__</tt>
+attribute; however, other objects may have write restrictions on their
+<tt>__dict__</tt> attributes (for example, new-style classes use a
+dictproxy to prevent direct dictionary updates).</p>
+<p>Without an argument, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#vars" title="vars" target="_blank"><tt>vars()</tt></a> acts like <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#locals" title="locals" target="_blank"><tt>locals()</tt></a>.  Note, the
+locals dictionary is only useful for reads since updates to the locals
+dictionary are ignored.</p>
+</dd></dl>
+
+<dl>
+<dt id="xrange">
+<tt>xrange</tt><big>(</big><em>stop</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#xrange" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dt>
+<tt>xrange</tt><big>(</big><em>start</em>, <em>stop</em>, <em>step</em><big>)</big></dt>
+<dd><p>This function is very similar to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#range" title="range" target="_blank"><tt>range()</tt></a>, but returns an <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq-xrange" target="_blank"><em>xrange
+object</em></a>
+instead of a list.  This is an opaque sequence type which yields the same values
+as the corresponding list, without actually storing them all simultaneously.
+The advantage of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#xrange" title="xrange" target="_blank"><tt>xrange()</tt></a> over <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#range" title="range" target="_blank"><tt>range()</tt></a> is minimal (since
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#xrange" title="xrange" target="_blank"><tt>xrange()</tt></a> still has to create the values when asked for them) except when a
+very large range is used on a memory-starved machine or when all of the range’s
+elements are never used (such as when the loop is usually terminated with
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#break" target="_blank"><tt>break</tt></a>).  For more information on xrange objects, see
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq-xrange" target="_blank"><em>XRange Type</em></a> and <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/stdtypes.html#typesseq" target="_blank"><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a>.</p>
+<div>
+<p><strong>CPython implementation detail:</strong> <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#xrange" title="xrange" target="_blank"><tt>xrange()</tt></a> is intended to be simple and fast.  Implementations may
+impose restrictions to achieve this.  The C implementation of Python
+restricts all arguments to native C longs (“short” Python integers), and
+also requires that the number of elements fit in a native C long.  If a
+larger range is needed, an alternate version can be crafted using the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/itertools.html#module-itertools" title="itertools: Functions creating iterators for efficient looping." target="_blank"><tt>itertools</tt></a> module: <tt>islice(count(start, step),
+(stop-start+step-1+2*(step&lt;0))//step)</tt>.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="zip">
+<tt>zip</tt><big>(</big><em>iterable</em>, <em>...</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#zip" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><p>This function returns a list of tuples, where the <em>i</em>-th tuple contains the
+<em>i</em>-th element from each of the argument sequences or iterables. The returned
+list is truncated in length to the length of the shortest argument sequence.
+When there are multiple arguments which are all of the same length, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#zip" title="zip" target="_blank"><tt>zip()</tt></a>
+is similar to <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#map" title="map" target="_blank"><tt>map()</tt></a> with an initial argument of . With a single
+sequence argument, it returns a list of 1-tuples. With no arguments, it returns
+an empty list.</p>
+<p>The left-to-right evaluation order of the iterables is guaranteed. This
+makes possible an idiom for clustering a data series into n-length groups
+using <tt>zip(*[iter(s)]*n)</tt>.</p>
+<p><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#zip" title="zip" target="_blank"><tt>zip()</tt></a> in conjunction with the  operator can be used to unzip a
+list:</p>
+<div><div>&gt;&gt;&gt;<pre>&gt;&gt;&gt;     
+&gt;&gt;&gt;     
+&gt;&gt;&gt; zipped   
+&gt;&gt;&gt; zipped
+[(1, 4), (2, 5), (3, 6)]
+&gt;&gt;&gt;    zipped
+&gt;&gt;&gt;       
+
+</pre></div>
+</div>
+<div>
+<p>New in version 2.0.</p>
+</div>
+<div>
+<p>Changed in version 2.4: Formerly, <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#zip" title="zip" target="_blank"><tt>zip()</tt></a> required at least one argument and <tt>zip()</tt> raised a
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/exceptions.html#exceptions.TypeError" title="exceptions.TypeError" target="_blank"><tt>TypeError</tt></a> instead of returning an empty list.</p>
+</div>
+</dd></dl>
+
+<dl>
+<dt id="__import__">
+<tt>__import__</tt><big>(</big><em>name</em>, <em>globals</em>, <em>locals</em>, <em>fromlist</em>, <em>level</em><big>)</big><a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#__import__" title="Permalink to this definition" target="_blank">¶</a></dt>
+<dd><div id="index-8">
+
+<p>This is an advanced function that is not needed in everyday Python
+programming, unlike <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/importlib.html#importlib.import_module" title="importlib.import_module" target="_blank"><tt>importlib.import_module()</tt></a>.</p>
+</div>
+<p>This function is invoked by the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement.  It can be
+replaced (by importing the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/__builtin__.html#module-__builtin__" title="__builtin__: The module that provides the built-in namespace." target="_blank"><tt>__builtin__</tt></a> module and assigning to
+<tt>__builtin__.__import__</tt>) in order to change semantics of the
+<a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement, but nowadays it is usually simpler to use import
+hooks (see <a href="http://www.python.org/dev/peps/pep-0302" target="_blank"><strong>PEP 302</strong><sup class="readableLinkFootnote">[3]</sup></a>).  Direct use of <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#__import__" title="__import__" target="_blank"><tt>__import__()</tt></a> is rare, except in
+cases where you want to import a module whose name is only known at runtime.</p>
+<p>The function imports the module <em>name</em>, potentially using the given <em>globals</em>
+and <em>locals</em> to determine how to interpret the name in a package context.
+The <em>fromlist</em> gives the names of objects or submodules that should be
+imported from the module given by <em>name</em>.  The standard implementation does
+not use its <em>locals</em> argument at all, and uses its <em>globals</em> only to
+determine the package context of the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement.</p>
+<p><em>level</em> specifies whether to use absolute or relative imports.  The default
+is  which indicates both absolute and relative imports will be
+attempted.   means only perform absolute imports.  Positive values for
+<em>level</em> indicate the number of parent directories to search relative to the
+directory of the module calling <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#__import__" title="__import__" target="_blank"><tt>__import__()</tt></a>.</p>
+<p>When the <em>name</em> variable is of the form <tt>package.module</tt>, normally, the
+top-level package (the name up till the first dot) is returned, <em>not</em> the
+module named by <em>name</em>.  However, when a non-empty <em>fromlist</em> argument is
+given, the module named by <em>name</em> is returned.</p>
+<p>For example, the statement <tt>import </tt> results in bytecode resembling the
+following code:</p>
+<div><div><pre>  __import__'spam' globals locals  
+</pre></div>
+</div>
+<p>The statement <tt>import spam.ham</tt> results in this call:</p>
+<div><div><pre>  __import__'spam.ham' globals locals  
+</pre></div>
+</div>
+<p>Note how <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#__import__" title="__import__" target="_blank"><tt>__import__()</tt></a> returns the toplevel module here because this is
+the object that is bound to a name by the <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/reference/simple_stmts.html#import" target="_blank"><tt>import</tt></a> statement.</p>
+<p>On the other hand, the statement <tt> spam.ham import eggs, sausage 
+</tt> results in</p>
+<div><div><pre>_temp  __import__'spam.ham' globals locals 'eggs' 'sausage' 
+  _temp
+  _tempsausage
+</pre></div>
+</div>
+<p>Here, the <tt>spam.ham</tt> module is returned from <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/functions.html#__import__" title="__import__" target="_blank"><tt>__import__()</tt></a>.  From this
+object, the names to import are retrieved and assigned to their respective
+names.</p>
+<p>If you simply want to import a module (potentially within a package) by name,
+use <a href="file:///Users/bryn/Library/Application%20Support/Dash/Versioned%20DocSets/Python%202%20-%20DHDocsetDownloader/2-7-9/Python%202.docset/Contents/Resources/Documents/doc/library/importlib.html#importlib.import_module" title="importlib.import_module" target="_blank"><tt>importlib.import_module()</tt></a>.</p>
+<div>
+<p>Changed in version 2.5: The level parameter was added.</p>
+</div>
+<div>
+<p>Changed in version 2.5: Keyword support for parameters was added.</p>
+</div>
+</dd></dl>
+
+</div></div></div><div id="footnotedLinks" class="separateSection"><div id="footnotedLinks__separator" class="separator"><div class="separatorLine setTextColorAsBackgroundColor"></div><div class="separatorLabel setBackgroundColor">Links</div></div><ol id="footnotedLinks__list"><li><a href="http://www.python.org/dev/peps/pep-0236">http://www.python.org/dev/peps/pep-0236</a></li><li><a href="http://rhettinger.wordpress.com/2011/05/26/super-considered-super/">http://rhettinger.wordpress.com/2011/05/26/super-considered-super/</a></li><li><a href="http://www.python.org/dev/peps/pep-0302">http://www.python.org/dev/peps/pep-0302</a></li></ol></div><div id="measure__lineHeight">Measure</div><div id="measure__fontSize">Measure</div><div id="relatedNotes" class="separateSection none empty"><div id="relatedNotes__injected"></div><div id="relatedNotes__separator" class="separator"><div class="separatorLine setTextColorAsBackgroundColor"></div><div class="separatorLabel setBackgroundColor">Related Notes<div id="relatedNotes__separator__buttons"><a id="relatedNotes__close" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="relatedNotes__disable" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#">Disable?</a></div></div></div><div id="relatedNotes__notes"><div id="relatedNotes__first" class="note"></div><div id="relatedNotes__second" class="note"></div><div id="relatedNotes__third" class="note"></div></div></div><div id="accountFooter" class="separateSection"><div id="accountFooter__separator" class="separator"><div class="separatorLine setTextColorAsBackgroundColor"></div><div class="separatorLabel setBackgroundColor"><div id="accountFooter__logo"></div></div></div><div id="accountFooter__text">Get a free Evernote account to save this article and view it later on any device.</div><a id="accountFooter__button" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" title="Create account">Create account</a></div></div></div></div><div id="background" style="right: 1920px;"><div id="background_shading"></div></div></div><link rel="stylesheet" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/the_components/reformat/css/style.css" type="text/css"><div id="extra__ui__basics"><div id="cover_everything" style="display: none;"></div><div id="loading" style="display: none;"><div id="loading_spinner"></div></div><div id="sidebar" class="belowBackground withoutShading" style="right: -100px;"><div id="sidebar_menu"><a id="sidebar_menu__close" title="Hide the overlay. (Escape, Control + Command + Right Arrow)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><div id="sidebar_menu__line_above"></div><a id="sidebar_menu__clip_to_evernote" title="Clip to Evernote. (Control + Command + Up Arrow)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__clipped_to_evernote" title="Clip to Evernote. (Control + Command + Up Arrow)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__clipping_to_evernote" title="Clip to Evernote." href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"><div id="sidebar_menu__clipping_to_evernote_spinner"></div></a><a id="sidebar_menu__highlight_to_evernote" title="Highlight. (Control + Command + H)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__highlighting_to_evernote" title="Highlight. (Control + Command + H)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__settings" title="Show Themes." href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__settings_showing" title="Show Themes." href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><a id="sidebar_menu__print" title="Print. (Command P)" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><div id="sidebar_menu__line_below"></div></div><div id="sidebar_dialogs"><div class="dialog" id="dialog__clip__filing"><div class="dialog_canvas theFont"><div id="clip__filing" class="not_injected__filing not_injected__clip_info"><div id="clip__filing__dropdown_overlay"></div><div id="clip__filing__loading_overlay"></div><div id="filing__hidden"><div id="filing__injected"></div><div id="filing__clip_info"><div id="filing__clip_info__injected"></div><div id="filing__clip_info__title"></div><div id="filing__clip_info__url"></div><div id="filing__clip_info__notebook_id"></div><div id="filing__clip_info__tag_names"></div></div><div id="filing__tags__list__personal"></div><div id="filing__tags__list__business"></div></div><div id="filing__title__container"><a id="filing__title"><span id="filing__title__clipped">Clipped</span>&nbsp;<span id="filing__title__caption"></span></a></div><div id="filing__separator"></div><div id="filing__notebook"><span id="filing__notebook__overlay"></span><span id="filing__notebook__id"></span><div id="filing__notebook__name"></div></div><div id="filing__notebooks__dropdown" class="list_container show_list"><div id="filing__notebooks__find" class="list"></div><div id="filing__notebooks__list" class="list"></div><input id="filing__notebooks__search" class="theFont" placeholder="Find a notebook" maxlength="20"><a id="filing__notebooks__refresh" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" title="Refresh notebooks list"></a></div><div id="filing__tag__container"><div id="filing__tag__none">Tags not allowed</div><input id="filing__tag" class="theFont" placeholder="Add a tag" maxlength="20"></div><div id="filing__tags__dropdown" class="list_container"><div id="filing__tags__find" class="list"></div></div><div id="filing__tags"></div><div id="filing__tags__after"></div></div></div><div class="dialog_bottom"></div></div><div class="dialog" id="dialog__clip__failed"><div class="dialog_canvas"><div id="dialog__clip__failed__icon"></div><div id="dialog__clip__failed__label" class="theFont">Clipping failed.</div></div><div class="dialog_cover"></div></div><div class="dialog" id="dialog__clip__login_request"><div class="dialog_canvas theFont"><div id="login_request_message">To sign in to Evernote, please click the Clearly icon in Chrome's toolbar.</div><div id="login_request_image"></div></div></div><div class="dialog" id="dialog__settings__4"><div class="dialog_canvas"><div id="settings__4"><a id="settings__4__1" class="themeBox"><div class="themeThumbnail"></div><div class="themeTitle">Newsprint</div></a><a id="settings__4__2" class="themeBox"><div class="themeThumbnail"></div><div class="themeTitle">Notable</div></a><a id="settings__4__3" class="themeBox"><div class="themeThumbnail"></div><div class="themeTitle">Night Owl</div></a><a id="settings__4__custom" class="themeBox selected"><div class="themeThumbnail"></div><div class="themeTitle">Custom</div></a><div id="settings__4__separator_1" class="settingsSeparator"></div><div class="fontSizeButtons" id="settings__4__fontSizeButtons"><a id="settings__4__fontSize__small" class="fontSizeButton fontSizeSmall"><div class="fontSizeLabel">small</div></a><a id="settings__4__fontSize__medium" class="fontSizeButton fontSizeMedium selected"><div class="fontSizeLabel">medium</div></a><a id="settings__4__fontSize__large" class="fontSizeButton fontSizeLarge"><div class="fontSizeLabel">large</div></a></div><div id="settings__4__separator_2" class="settingsSeparator"></div><div id="settings__4__more_options">More options</div></div></div></div></div></div></div><div id="extra__ui"><div id="fitts" title="Hide the overlay."></div><div id="dialogs_overlay"></div><div id="other_dialogs"><div class="dialog dynamic" id="dialog__eula"><div class="dialog_canvas theFont"><div id="dialog__eula__content"><div id="dialog__eula_container"><h1>End User License Agreement</h1><p>IMPORTANT NOTICE: THIS IS A LEGAL AGREEMENT BETWEEN EVERNOTE AND THE PARTY THAT DOWNLOADS, INSTALLS AND/OR USES THE SOFTWARE PROVIDED BY EVERNOTE, EACH OF WHOM ACCEPTS THE TERMS OF THIS AGREEMENT FOR HERSELF, HIMSELF OR ITSELF (AS APPLICABLE, "LICENSEE"). IF YOU RESIDE IN THE UNITED STATES OR CANADA, THIS CONTRACT WILL BE WITH EVERNOTE CORPORATION, AND, IF YOU RESIDE OUTSIDE OF THE UNITED STATES AND CANADA, THIS CONTRACT WILL BE WITH EVERNOTE GMBH, A WHOLLY-OWNED SUBSIDIARY OF EVERNOTE CORPORATION. (EVERNOTE CORPORATION AND EVERNOTE GMBH, AS APPLICABLE, MAY BE REFERRED TO IN THIS AGREEMENT AS "EVERNOTE"). EVERNOTE SOFTWARE IS LICENSED AND NOT SOLD AND THE RIGHTS TO USE THE SOFTWARE ARE SET FORTH IN THIS AGREEMENT. AS DESCRIBED BELOW, USING THE SOFTWARE ALSO OPERATES AS YOUR CONSENT TO THE TRANSMISSION OF CERTAIN INFORMATION AND DATA DURING ACTIVATION, USE, OBTAINING SOFTWARE UPDATES AND FOR INTERNET-BASED SERVICES.</p><p>CAREFULLY READ THE FOLLOWING TERMS APPLICABLE TO THE LICENSE OF THE EVERNOTE APPLICATION SOFTWARE AND ANY OTHER SOFTWARE PROVIDED TO LICENSEE BY EVERNOTE PURSUANT TO WARRANTY, MAINTENANCE AND SUPPORT OR OTHERWISE, ALL OF WHICH ARE INCLUDED WITHIN THE DEFINITION OF "SOFTWARE" BELOW. THESE TERMS AND CONDITIONS SHALL CONSTITUTE A LEGALLY BINDING AGREEMENT BY AND BETWEEN EVERNOTE AND LICENSEE. LICENSEE'S ACCEPTANCE ACCORDING TO THE TERMS HEREIN AND/OR LICENSEE'S INSTALLATION, REPRODUCTION OR USE OF THE SOFTWARE ALSO SIGNIFIES LICENSEE'S AGREEMENT TO BE LEGALLY BOUND BY THESE TERMS AND CONDITIONS.</p><p>PLEASE NOTE THAT YOU NEED NOT AGREE TO BE BOUND BY THIS AGREEMENT. HOWEVER, IF YOU DO NOT AGREE TO BE LEGALLY BOUND BY THE TERMS AND CONDITIONS SET FORTH HEREIN, YOU ARE NOT PERMITTED TO INSTALL, COPY, USE OR TRANSFER THE SOFTWARE AND SHALL NOT HAVE ANY RIGHTS HEREUNDER AS A "LICENSEE." IF YOU DO NOT AGREE TO BE BOUND BY THIS AGREEMENT, YOU SHOULD PROMPTLY UNINSTALL THE SOFTWARE. NO ADDITIONAL OR CONTRARY TERMS TO THIS AGREEMENT SHALL APPLY UNLESS AGREED TO IN A WRITTEN AGREEMENT BETWEEN LICENSEE AND EVERNOTE.</p><h2>1. DEFINITIONS.</h2><p>For the purposes of this Agreement, the following definitions shall apply:</p><p>1.1 "Derivative Work" means a work that is based upon or derived from the Software, such as a revision, modification, translation, abridgment, condensation or expansion, or any form in which Software may be recast, transformed or adapted, which, if prepared without the express written consent of Evernote, would constitute copyright infringement.</p><p>1.2 "Evernote Service" means the Evernote software service that enables Registered Users to store, organize, search and share text, documents, images and sounds, and upload and sync the same through one or more Certified Device(s).</p><p>1.3 "Evernote Site" means the Internet site(s) published by Evernote and applicable to the Software and/or Evernote Service, as they may change from time to time, including, without limitation, the site which is currently located at www.evernote.com.</p><p>1.4 "Evernote Terms of Service" means the then applicable terms and conditions governing the use of the Evernote Service, as published at the Evernote Site.</p><p>1.5 "Individual Computer" means any general-purpose computing device (desktop, laptop, netbook, tablet, smart phone) that is operated by one human user at a time for that user's benefit (e.g., not as a server or in any partition of a computer system). Licensee may access the Software operating on an Individual Computer through a remote device without any additional license.</p><p>1.6 "Object Code" means the form of computer program or portion thereof that can be executed by a computer without further modification.</p><p>1.7 "Registered User" means any individual who has registered at the Evernote Site for either a premium account or free account to use the Evernote Service.</p><p>1.8 "Software" means, collectively, (i) that version of the Evernote application software reflected in text accessed within the Evernote application software, (ii) all updates, upgrades, patches, bug fixes and modifications thereto that may be released by Evernote and made available to Licensee from time to time, if any, in Object Code form and (iii) all written information and materials provided to Licensee with and regarding the Evernote application software, including, without limitation, in the "About" tab or other settings information areas within the particular application (which information may be referred to herein as "Documentation").</p><p>1.9 "Source Code" means the human-readable form of the code and related system documentation for the Software, including all comments and any procedural code such as job control language.</p><p>1.10 "Supported Device" means the type of Individual Computer (e.g., iPad) or the Individual Computer running a certain operating system (e.g., Windows) for which the Software is designed and offered for use. Evernote identifies the Supported Device for the Software by name in connection with the link through which the Software is made available for download or on the written software application description in the materials provided by Evernote with the Software.</p><h2>2. SOFTWARE LICENSES; GENERAL RESTRICTIONS.</h2><h3>2.1 License Grants.</h3><p>(a) Subject to the terms and conditions contained herein, Licensee is hereby granted, and Licensee accepts, a non-exclusive, non-transferable, fully-paid license (i) to install and use the Software on one or more Supported Devices owned or controlled by Licensee and (ii) during such period of time that Licensee is a Registered User, use the Software to enable interaction between the Evernote Service and the Supported Device on which the Software is installed, subject to the Evernote Terms of Service.</p><p>(b) Subject to the terms and conditions contained herein, Evernote hereby grants Licensee a non-exclusive, non-transferable license to make a reasonable number of copies of the Software without modification for Licensee's personal use. Licensee agrees that this License Agreement applies to all such copies.</p><p>(c) Certain computer software components licensed by one or more third-parties may be provided with the Software. Evernote grants Licensee a non-exclusive, non-transferable, fully-paid license to use one copy of any third- party software provided by Evernote with the Software ("Third-Party Software") on the terms herein and such terms (if any) as may be set forth in the Documentation (including any additional terms therein), provided that: TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL THIRD-PARTY SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS. THE PROVISIONS REGARDING DISCLAIMER OF WARRANTIES, EXCLUSION OF CONSEQUENTIAL AND CERTAIN OTHER DAMAGES AND LIMITATION OF LIABILITY IN SECTIONS 6 AND 7 BELOW SHALL APPLY TO SUCH THIRD-PARTY SOFTWARE.</p><h3>2.2 General License Restrictions.</h3><p>Licensee shall only use the Software for Licensee's personal use on a Supported Device and, in connection with the Evernote Service, as permitted by the Evernote Terms of Service. Licensee shall not cause or permit the renting, leasing, sublicensing or selling, or any dissemination or other distribution of copies of, the Software by any means or in any form to any person, and shall not permit others to use the Software via a timesharing, outsourcing, service bureau, application service provider, managed service provider or similar arrangement. Licensee may not use the Software in any way that is intended to circumvent the Evernote Terms of Service or to otherwise violate any law or regulation. Licensee shall not use or distribute as a separate or stand alone executable file, product or server any Third-Party Software or use such Third-Party Software except as a component part of the Software. Licensee agrees not to, directly or indirectly, take any action to modify, translate, decompile, reverse engineer, reverse compile, convert to another programming language or otherwise attempt to derive Source Code from the Software or any internal data files generated by the Software, or perform any similar type of operation on any software or firmware acquired under this Agreement, in any fashion or for any purpose whatsoever, except to the extent the foregoing restriction is expressly prohibited by applicable law notwithstanding this limitation. Licensee also acknowledges and agrees any such works are Derivative Works and acknowledges that Evernote retains ownership of the copyright in any Derivative Works and is not granting any right to make, use, publish or distribute any Derivative Works of the Software. Licensee shall not modify or delete any Evernote or thirdparty proprietary rights notices appearing in the Software, or any Third-Party Software, and will implement any changes to such notices, if feasible, that Evernote may reasonably request. Licensee acknowledges and agrees that the technology manifested in the operation of the Software constitutes the valuable trade secrets and know-how of Evernote and its suppliers and, to the extent Licensee discovers any such trade secrets, Licensee will not disclose them to any third party. Licensee acknowledges and agrees that this Agreement in no way shall be construed to provide to Licensee any express or implied license to use or otherwise exploit the Software or any portion thereof except as specifically set forth in this Agreement, and all rights not expressly granted to Licensee are reserved by Evernote. Licensee has no right to transfer any interest in or to any Software, except as permitted by the express terms in this Agreement. The license granted herein is neither contingent on the delivery of any future functionality or features nor dependent on any oral or written public comments made by Evernote regarding future functionality or features.</p><h2>3. OWNERSHIP OF SOFTWARE.</h2><p>Evernote's ownership interests in the Software are protected by United States and other applicable copyright, patent and other laws and international treaty provisions. Except for the limited license rights specifically granted to Licensee in this Agreement, all rights, title and interests, including without limitation intellectual property rights, in and to the Software, including all Derivative Works thereof, (and all copies thereof and related materials that are produced or shipped to Licensee under this Agreement), belong to and shall be retained by Evernote or its suppliers, as applicable. Licensee acknowledges that the development of the Software is an ongoing process and that Licensee and other licensees of the Software benefit from the improvements resulting from such ongoing development. In order to facilitate such ongoing development, Licensee may provide certain suggestions, documentation, materials and other data to Evernote regarding the use, improvement or applications of the Software (the "Contributed Ideas"), and Licensee hereby acknowledges and agrees that all Contributed Ideas may be used by Evernote in the development of the Software and/or related products and services. Unless specifically provided in a writing signed by Evernote and Licensee and specifically relating to the disclosure of any Contributed Ideas, and notwithstanding any provision in this Agreement to the contrary, Licensee hereby grants to Evernote the irrevocable, perpetual, nonexclusive, worldwide, royalty-free right and license to disclose, use and incorporate the Contributed Ideas in connection with the development of the Software and/or related products and services, and the demonstration, display, license, reproduction, modification and distribution and sale of the Software and/or related products and services, without any obligation to provide any accounting or other reporting.</p><h2>4. SOFTWARE SUPPORT; INTERACTION WITH EVERNOTE.</h2><p>4.1 Support of Licensee. During the term of this Agreement, Evernote shall use its commercially reasonable efforts to provide technical support of the Software to Licensee according to its then applicable support policies. Such technical support shall be available by email communication in the English language, and any other language that may be available from time to time, during Evernote's regular business hours, subject to further restrictions, which may be set forth at the Evernote Site or otherwise published by Evernote and provided or made available to Licensee.</p><p>4.2 Information Sharing and Interactions. During installation of the Software and from time to time thereafter when Licensee uses the Software, the Software will send information about the Software and the Individual Computer on which the Software is installed to Evernote. This information includes the version of the Software, the language of the Software (e.g., English, Japanese, etc.), the Internet protocol address of the Individual Computer and the Individual Computer's hardware configuration. Evernote does not use this information to identify personal information regarding Licensee. Evernote does use this information to ensure that Licensee is operating the most current version of the Software and, if there is a newer release of the Software, enable Licensee to download and install the current version appropriate for the Individual Computer. Depending upon the settings in the Software, updates to the Software may be installed automatically without Licensee's separate consent. In addition, Evernote will use the information provided to Evernote to enable interaction of the Individual Computer with the Evernote Service, if Licensee is a Registered User. Licensee may customize the interactions with Evernote through the settings found within the Software to limit or, in certain cases, eliminate such interactions. Evernote will use digital certificates to confirm Licensee's identity for the purpose of enabling standard encryption of content transmitted between Licensee's Individual Computer and the Evernote Service. In an effort to protect the security of such transmissions, Licensee cannot disable the use of such digital certificates in connection with the use of the Evernote Service. By using the Software, Licensee consents to the sharing of the information and interactions described herein and, by using the Software with the Evernote Service, Licensee also consents to the use of information described in the then current Evernote Privacy Policy published at the Evernote Site.</p><h2>5. TERM AND TERMINATION.</h2><p>This Agreement shall commence on the earlier date of delivery or download of the Software, shall be confirmed upon and by the installation of the Software on any computer device and shall continue for so long as Licensee complies with the terms herein, subject to termination or expiration in accordance with the terms provided herein. This Agreement shall automatically terminate, without notice, upon any failure by Licensee to comply with the terms of this Agreement. Upon the termination of this Agreement, all licenses and other rights granted to Licensee hereunder shall immediately terminate. Notwithstanding any termination of this Agreement, the provisions of Sections 3 (Ownership of Software), 6.2 (Disclaimer of Warranties), 7 (Limitations on Liability), 11 (General Provisions) and this Section 5 shall survive and continue to be legally binding upon Licensee and Evernote.</p><h2>6. SOFTWARE WARRANTY AND DISCLAIMER OF WARRANTIES; SOFTWARE WARRANTY REMEDY.</h2><h3>6.1 Limited Warranty.</h3><p>Evernote hereby warrants to Licensee that the Software will perform substantially in accordance with the functional description applicable thereto at the Evernote Site if used in accordance with the terms of this Agreement and any applicable directions or requirements in the Documentation. The foregoing warranty is extended to the initial Licensee only, is not transferable and shall be in effect for thirty (30) days immediately following Licensee's receipt of the Software (the "Software Warranty Period"). Licensee's sole and exclusive remedy and the entire liability of Evernote and its suppliers and licensors for any breach of this limited warranty will be, at Evernote's option, repair or replacement of the Software, if such breach is reported prior to the expiration of the Warranty Period to Evernote or the Evernote authorized distributor that supplied the Software to Licensee (the "Software Warranty Remedy"). Evernote may require that Licensee return or certify the destruction of all copies of the Software to Evernote or to the authorized distributor in order to receive the designated remedy hereunder. Any replacement Software provided pursuant to this Section 6.1 will be covered by the warranty in this Section 6.1 for the remainder of the original Software Warranty Period or for 30 days from the date on which Licensee receives such repaired or replacement Software, whichever is longer.</p><h3>6.2 Disclaimer of Warranties.</h3><p>(a) EXCEPT AS EXPRESSLY PROVIDED IN SECTION 6.1, THE SOFTWARE IS BEING PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND AND EVERNOTE HEREBY DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, ORAL OR WRITTEN, WITH RESPECT TO THE SOFTWARE, INCLUDING, WITHOUT LIMITATION, ANY AND ALL IMPLIED WARRANTIES AS TO THE CONDITION, NONINFRINGEMENT, MERCHANTABILITY, DESIGN, OPERATION OR FITNESS FOR ANY PARTICULAR PURPOSE. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY EVERNOTE, ITS RESELLERS AND/OR ITS OR THEIR AGENTS OR EMPLOYEES, SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE OR MODIFY THE SCOPE OF THE WARRANTIES EXPRESSLY SET FORTH HEREIN. If Licensee's legal jurisdiction provides that a certain implied warranty may not be disclaimed, such implied warranty shall only apply to defects discovered during the period of the express Software Warranty Period provided herein. There is no implied warranty for defects discovered after the expiration of such Software Warranty Period. Some legal jurisdictions do not allow limitations on how long an implied warranty lasts, so these limitations may not apply to Licensee.</p><p>(b) EXCEPT AS EXPRESSLY PROVIDED IN SECTION 6.1, EVERNOTE DOES NOT WARRANT THAT THE SOFTWARE WILL MEET ALL REQUIREMENTS OF LICENSEE, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE, OR THAT ALL SOFTWARE DEFECTS WILL BE CORRECTED. FURTHER, EVERNOTE IS NOT RESPONSIBLE FOR ANY DEFECT OR ERROR RESULTING FROM: (I) THE MODIFICATION, MISUSE OR DAMAGE OF THE SOFTWARE BY PARTIES OTHER THAN EVERNOTE OR PARTIES PERFORMING AS A CONTRACTOR TO, AND AT THE DIRECTION OF, EVERNOTE, (II) LICENSEE'S FAILURE TO IMPLEMENT ALL BUG FIXES OR OTHER DEFECT CORRECTIONS WHICH ARE MADE AVAILABLE BY EVERNOTE, (III) USE OF THE SOFTWARE IN A MANNER INCONSISTENT WITH THE DIRECTIONS PROVIDED IN THE DOCUMENTATION OR AS PERMITTED BY THIS AGREEMENT, (IV) ANY COMPUTER VIRUS OR (V) ANY DEFECT IN OR FAILURE OF ANY THIRD PARTY'S INDIVIDUAL COMPUTER, EQUIPMENT, NETWORK OR SOFTWARE, OR FOR ANY USER ERROR. EVERNOTE DOES NOT WARRANT AND SHALL HAVE NO LIABILITY WITH RESPECT TO NON-EVERNOTE PRODUCTS OR SERVICES INCLUDING, WITHOUT LIMITATION, THIRD-PARTY SOFTWARE OR HARDWARE, INTERNET CONNECTIONS OR CONNECTIVITY OR COMPUTER NETWORKS.</p><h2>7. LIMITATIONS ON LIABILITY.</h2><h3>7.1 Consequential Damages.</h3><p>IN NO EVENT SHALL EVERNOTE BE LIABLE TO LICENSEE FOR ANY LOSS OF OR DAMAGE TO DATA OR OTHER PERSONAL OR BUSINESS INFORMATION, LOST PROFITS OR USE OF THE SOFTWARE, OR FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING THE INSTALLATION, USE OR PERFORMANCE, OR INABILITY TO USE, THE SOFTWARE, EVEN IF EVERNOTE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p><h3>7.2 Limitation.</h3><p>EVERNOTE PROVIDES THE SOFTWARE AT NO CHARGE TO LICENSEE. IN CONSIDERATION FOR, AND AS A FUNDAMENTAL AND EXPRESS CONDITION OF ENABLING USE OF THE SOFTWARE WITHOUT CHARGE, AND NOTWITHSTANDING ANY PROVISION IN THIS AGREEMENT TO THE CONTRARY, EVERNOTE SHALL NOT HAVE ANY LIABILITY FOR ANY MATTER ARISING OUT OF THE SUBJECT MATTER OF THIS AGREEMENT, WHETHER IN CONTRACT, TORT OR OTHERWISE, EXCEPT THE SOFTWARE WARRANTY REMEDY. THE LIMITATIONS HEREIN SHALL APPLY EVEN IF THE SOFTWARE WARRANTY REMEDY DOES NOT FULLY COMPENSATE LICENSEE FOR ANY OR ALL LOSSES, OR IF EVERNOTE KNEW OR SHOULD HAVE KNOWN ABOUT THE POSSIBILITY OF CONSEQUENTIAL DAMAGES. SOME LEGAL JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO LICENSEE IF LICENSEE RESIDES IN CERTAIN JURISDICTIONS.</p><h2>8. COMPLIANCE WITH EXPORT LAWS.</h2><p>Licensee acknowledges that the Software is subject to laws and regulations of the United States restricting the export thereof to foreign jurisdictions and agrees to comply with all applicable United States and foreign international laws, including, without limitation, the rules and regulations promulgated from time to time by the Bureau of Export Administration, United States Department of Commerce. Without limiting the foregoing, Licensee shall not download, and if downloaded shall not install or shall immediately uninstall and destroy, the Software if Licensee's download, installation or use of the Software is prohibited under applicable laws. By installing or using the Software, Licensee agrees to the foregoing and certifies that it is not located in, under the control of, or a national or resident of any country or on any list of countries to which the United States has embargoed goods or on the United States Treasury Department's list of Specially Designated Nations or the United States Commerce Department's Table of Denial Orders. Licensee shall not export, re-export, transfer or divert directly or indirectly, the Software, Documentation or other information or materials provided hereunder, or the output thereof, to any restricted place or person for which the United States or any other relevant jurisdiction requires any export license or other governmental approval at the time of export without first obtaining such license or approval. Evernote has no responsibility for compliance with such laws and regulations by Licensee. Licensee hereby agrees to indemnify and hold harmless Evernote from and against all claims, losses, damages, liabilities, costs and expenses, including reasonable attorneys' fees, to the extent such claims arise out of any breach of this Section 8.</p><h2>9. HIGH RISK ACTIVITIES.</h2><p>The Software is not fault-tolerant for, and is not designed or intended for use in, hazardous environments requiring fail-safe performance, including, without limitation, in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, weapons systems, direct life-support machines or any other application in which the failure of the Software could lead directly to death, personal injury or severe physical or property damage (collectively, "High Risk Activities"). Evernote expressly disclaims any express or implied warranty of fitness for High Risk Activities.</p><h2>10. UNITED STATES GOVERNMENT.</h2><p>The Software and Documentation are "commercial computer software" and "commercial computer software documentation," respectively, pursuant to DFAR Section 227.7202 and FAR Section 12.212, as applicable. Any use, modification, reproduction, release, performance, display or disclosure of the Software by the United States Government shall be governed solely by the terms of this Agreement, except to the extent expressly permitted by the terms of this Agreement.</p><h2>11. GENERAL PROVISIONS.</h2><h3>11.1 Entire Agreement; Amendment.</h3><p>This Agreement constitutes the entire agreement with regard to the subject matter hereof. No waiver, consent, modification or change of terms of this Agreement shall bind any party unless in writing signed by such party, and then such waiver, consent, modification or change shall be effective only in the specific instance and for the specific purpose given.</p><h3>11.2 Relationship.</h3><p>No agency, partnership, joint venture or employment is created between the parties hereto as a result of this Agreement. Neither party is authorized to create any obligation, expressed or implied, on behalf of the other party, or to exercise any control over the other party's methods of operation, except as specifically provided herein.</p><h3>11.3 Governing Law.</h3><p>This Agreement shall be governed by and construed in accordance with the laws of the State of California, United States of America, without regard to its choice of law provisions, and shall not be governed by the provisions of the Convention on Contracts for the International Sale of Goods. If you are provided a translation of this Agreement in a language other than English, such translation is offered as a convenience and, if there is any conflict between such translation and the English language version, the English version of this Agreement shall govern, to the extent not expressly prohibited by the law in your jurisdiction. If you have not received the English version of this Agreement, you may find it at the Evernote Corporation web site (www.evernote.com) or by contacting Evernote and requesting a copy.</p><h3>11.4 Waiver.</h3><p>The waiver by any party hereto of a breach or a default of any provision of this Agreement by another party shall not be construed as a waiver of any succeeding breach of the same or any other provision, nor shall any delay or omission on the part of either party to exercise or avail itself of any right, power or privilege that it has, or may have hereunder, operate as a waiver of any right, power or privilege by such party.</p><h3>11.5 Headings.</h3><p>Captions and headings contained in this Agreement have been included for ease of reference and convenience and shall not be considered in interpreting or construing this Agreement.</p><h3>11.6 Assignment; Successors.</h3><p>The terms and conditions of this Agreement shall inure to the benefit of and be enforceable by the parties hereto and their permitted successors and assigns; provided, that the only permitted successor or assignee shall be a party that acquires all or substantially all of the business and assets of Evernote, whether by merger, sale of assets or otherwise by operation of law. Licensee shall not assign this Agreement or any right, interest or obligation under this Agreement, or in or relating to the Software. Any attempted assignment or delegation in contravention of this provision shall be void and ineffective.</p><h3>11.7 Notices.</h3><p>Any notice or communication from one party to the other required or permitted to be given hereunder shall be in writing and either personally delivered, sent by postal service or sent via courier (with evidence of delivery in any case). All notices shall be in English and shall be effective upon actual receipt, irrespective of the date appearing thereon. Unless otherwise requested, all notices to Evernote shall be to the attention of "Compliance."</p><h3>11.8 Contact.</h3><p>If you have any questions concerning these terms and conditions, you may do so at the following address:</p><table cellspacing="0" cellpadding="5" border="1"><tbody><tr><th>&nbsp;</th><th>In the USA or Canada</th><th>Outside the USA and Canada</th></tr><tr><th>Mail:</th><td>Evernote Corporation<br>305 Walnut Street<br>Redwood City, CA 94065<br>Attn: General Counsel</td><td>Evernote GmbH<br>Joseffstrasse 59<br>8005, Zurich, Switzerland<br>Attn: Legal Notice</td></tr><tr><th>Email:</th><td>legalnotice@evernote.com</td><td>legalnotice@evernote.com</td></tr><tr><th>Phone:</th><td>650.41.NOTES (650.416.6837)</td><td>+1.650.41.NOTES (650.416.6837)</td></tr></tbody></table><p>If you would like to contact Evernote for any other reason relating to use of the Software, you may do so at this address: us-support@evernote.com.</p></div><div class="dialog_close" id="dialog__eula__close2_container"><a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" class="dialogButton theFont">Close</a></div></div><a class="dialog_close" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><div class="dialog_bottom"></div></div></div><div class="dialog dynamic" id="dialog__features"><div class="dialog_canvas theFont"><div id="dialog__features__content"><div class="features_title" id="dialog__features__title__all">Welcome to the new Evernote Clearly</div><div class="features_title" id="dialog__features__title__new">You have a new version of Evernote Clearly</div><table id="dialog__features__table" cellspacing="0" cellpadding="0" border="0"><tbody><tr id="dialog__features__clipping"><td class="image"><div class="feature_image"></div></td><td class="text"><div class="feature_title">Clip to Evernote</div><div class="feature_text">Save what you're reading to your Evernote account with one click. Access clips from any device, anytime in Evernote.</div></td></tr><tr id="dialog__features__highlighting"><td class="image"><div class="feature_image"></div></td><td class="text"><div class="feature_title">Highlighting</div><div class="feature_text">Highlight text you want to remember &amp; quickly find it in your Evernote account. Highlighting changes you make in Clearly will be updated in your Evernote account automatically.</div></td></tr><tr id="dialog__features__related_notes"><td class="image"><div class="feature_image"></div></td><td class="text"><div class="feature_title">Related Notes</div><div class="feature_text">Magically rediscover notes from your Evernote account that are related to the page you are viewing. Related Notes are displayed at the bottom of the article or on the right side if space permits.</div></td></tr><tr id="dialog__features__smart_filing"><td class="image"><div class="feature_image"></div></td><td class="text"><div class="feature_title">Smart Filing</div><div class="feature_text">Automatically assigns tags to your Web clips and saves them to the appropriate notebook, so you don't have to.</div></td></tr></tbody></table><div id="dialog__features__eula_notice">By using Clearly, you agree to our <a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#">End User License Agreement</a>.</div><div class="dialog_close" id="dialog__features__close2_container"><a href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#" class="dialogButton theFont">Close</a></div></div><a class="dialog_close" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/in_isolation/reformat.html#"></a><div class="dialog_bottom"></div></div></div></div></div></div>
+    <div id="stuff">
+        <link rel="stylesheet" href="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/css/reformat.css" type="text/css">
+        <script type="text/javascript" src="chrome-extension://iooicodkiihhpojmmeghjclgihfjdjhj/front/third_party/jquery/jquery.js"></script>
+    </div>    
+
+</body></html>
