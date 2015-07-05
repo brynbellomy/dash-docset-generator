@@ -1,6 +1,6 @@
 {
   "name": "dash-docset-generator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generates Dash docsets from JSON, YAML, Markdown, and HTML.",
   "author": "bryn austin bellomy <bryn.bellomy@gmail.com>",
   "license": "WTFPL",
