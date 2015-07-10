@@ -1,13 +1,13 @@
 
 # Dash docset generator
 
-## install
+## Install
 
 ```sh
 $ npm install -g dash-docset-generator
 ```
 
-## building custom docsets
+## Building custom docsets
 
 The build command is `build-dash-docsets`, and it takes the following options:
 
@@ -73,7 +73,9 @@ package.json(5) -- Specifics of npm's package.json handling
 The *most* important things in your package.json are the name and version fields.
 ```
 
-... etc.
+... which would come out something like this (there's still some micro-jank here and there, I know):
+
+<img src="screenshot.png" />
 
 
 

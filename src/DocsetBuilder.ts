@@ -103,18 +103,18 @@ export class DocsetBuilder
 
                 $('h1, h2, h3, h4, h5, h6').each((idx, header) => {
                     const text = $(header).text()
-                    const $a = $(header).find('a')
+                    const $anchors = $(header).find('a')
 
                     // dash needs this class, i think?
-                    $a.addClass('dashAnchor')
+                    $anchors.addClass('dashAnchor')
 
                     const entryName = text
-                    const entryNameSafe = encodeURIComponent(entryName) //entryName.replace(/[^a-zA-Z0-9 ]/g, '_')
+                    const entryNameSafe = encodeURIComponent(entryName)
                     const entryType = 'Module'
                     const entryPath = `${file.basename}#${entryNameSafe}`
 
                     // add the anchor element 'name' attribute with our metadata
-                    $a.attr('name', `//apple_ref/${entryType}/${entryNameSafe}`)
+                    $anchors.attr('name', `//apple_ref/${entryType}/${entryNameSafe}`)
 
                     // we have to add the anchor to the SQLite db too
                     this.databaseBuilder.addItem(entryName, entryType, entryPath)
