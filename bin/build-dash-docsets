@@ -1,34 +1,32 @@
 #!/usr/bin/env node
 
-'use strict';
-
-const shell = require('shelljs/global')
+var shell = require('shelljs/global')
   , chalk = require('chalk')
   , path  = require('path')
   , docs  = require('../build/index')
   , fs    = require('fs')
   , when = require('when')
 
-const argv = require('yargs')
+var argv = require('yargs')
                 .describe('i', 'The directory containing the source files to be converted into a docset.').alias('i', 'inputDir').demand('i').string('c')
                 .describe('o', 'The directory in which to place the generated docset.').alias('o', 'outputDir').default('o', 'build').string('o')
                 .describe('c', 'The config file, if an "index.md" with YAML front matter does not exist.').alias('c', 'config').string('c')
                 .usage('Usage: $0 -i <input dir> [-o <output dir>]')
                 .argv
 
-const SRC_DIR   = argv.inputDir
-const BUILD_DIR = argv.outputDir
+var SRC_DIR   = argv.inputDir
+var BUILD_DIR = argv.outputDir
 
 // ensure the build directory exists
 mkdir('-p', BUILD_DIR)
 
-const configPath = !!argv['config'] ? argv['config']
+var configPath = !!argv['config'] ? argv['config']
                                     : path.join(argv.inputDir, 'index.md')
 
-// const indexFile = path.join(argv.inputDir, 'index.md')
+// var indexFile = path.join(argv.inputDir, 'index.md')
 
 function loadDocsetConfig() {
-    const type = path.extname(configPath).toLowerCase()
+    var type = path.extname(configPath).toLowerCase()
     switch (type) {
         case '.md':     return docs.DocsetConfig.fromMarkdown(configPath, argv.outputDir)
         case '.yaml':   return docs.DocsetConfig.fromYAML(configPath, argv.inputDir, argv.outputDir)

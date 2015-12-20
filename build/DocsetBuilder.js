@@ -97,15 +97,15 @@ var DocsetBuilder = (function () {
                 var $_1 = cheerio.load(file.contents.toString());
                 $_1('h1, h2, h3, h4, h5, h6').each(function (idx, header) {
                     var text = $_1(header).text();
-                    var $a = $_1(header).find('a');
+                    var $anchors = $_1(header).find('a');
                     // dash needs this class, i think?
-                    $a.addClass('dashAnchor');
+                    $anchors.addClass('dashAnchor');
                     var entryName = text;
-                    var entryNameSafe = encodeURIComponent(entryName); //entryName.replace(/[^a-zA-Z0-9 ]/g, '_')
+                    var entryNameSafe = encodeURIComponent(entryName);
                     var entryType = 'Module';
                     var entryPath = file.basename + "#" + entryNameSafe;
                     // add the anchor element 'name' attribute with our metadata
-                    $a.attr('name', "//apple_ref/" + entryType + "/" + entryNameSafe);
+                    $anchors.attr('name', "//apple_ref/" + entryType + "/" + entryNameSafe);
                     // we have to add the anchor to the SQLite db too
                     _this.databaseBuilder.addItem(entryName, entryType, entryPath);
                 });
